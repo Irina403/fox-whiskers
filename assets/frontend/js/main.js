@@ -1,26 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const tabs = document.querySelector('.tab');
-  const tabsBtn = document.querySelectorAll('.tab__item');
-  const tabsContent = document.querySelectorAll('.tabs__content');
-
-  if (tabs) {
-    tabs.addEventListener('click', (e) => {
-      if (e.target.classList.contains('tab__item')) {
-        const tabsPath = e.target.dataset.tabsPath;
-        tabsBtn.forEach(el => {el.classList.remove('tab__item--active')});
-        document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('tab__item--active');
-        tabsHandler(tabsPath);
-      }
-    });
-  }
-
-  const tabsHandler = (path) => {
-    tabsContent.forEach(el => {el.classList.remove('tabs__content--active')});
-    console.log(tabsContent);
-    document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__content--active');
-  
-  };
-});
   $(document).ready(function($) {
     $('.slider__content').slick({
       arrows: true,
