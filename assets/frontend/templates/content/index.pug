@@ -1,196 +1,256 @@
-section.mainScreen
-        .mainScreen__col-left
-            .mainScreen__col-left-wrap
-                h1.mainScreen__titleMain Фундамент на ж/б сваях под ключ в Твери
-                h2.mainScreen__sub Сделаем фундамент под ключ на железобетонных <br> забивных сваях всего за 2 дня 
-
-                .mainScreen__form
-                    form(action="#").contactTel
-                        input(type="tel" placeholder="+ 7 (______) _______ - ______ - ______").contactTel__number
-                        input(type="submit" value="Оставить заявку").contactTel__button
-
+.mainScreen
+    .mainScreen__row 
+        .mainScreen__col
+            .mainScreen__imgLeft 
+                img(src="images/img1.jpg", alt="")
         .mainScreen__col-right
+            .mainScreen__headerWhats 
+                img(src="images/svg/whats-icon-header.svg", alt="")
+                a(href="#") +7 000 000 00 00
+            .mainScreen__blockTitleBtn
+                .mainScreen__bigTitle 
+                    h1 нескучный <br> сад
+                    .mainScreen__wrapImg
+                        img(src="images/svg/back1.svg", alt="")
+                .mainScreen__buttonPopup 
+                    a.popup-open(href="#") Оставить заявку
+                    img(src="images/svg/icon-arrow.svg", alt="")
+                .mainScreen__belowMain.belowMain
+                    .belowMain__block   
+                        img(src="images/img2.jpg", alt="")
+                        div номера 
+                            pre в собственность
 
-section.block 
-    .block__row 
-        .block__col 
-            img(src="images/img2.jpg", alt="")
-        .block__col 
-            .block__subTitle Железобетонный фундамент
-            .block__text Если на участке преобладает низкоплотный либо насыщенный влагой грунт, почва склонная к горизонтальным сдвигам и пучению, ни один фундамент - ленточный, стобчатый, плитный, не обеспечит зданию той надежности и устойчивости, которую может дать свайное основание. 
-            .block__text На фундаменте из ЖБ свай могут возводиться постройки любой этажности - это основной вид фундамента при строительстве кирпичных многоэтажек и тяжелых зданий с ЖБ перекрытиями. 
-            .block__text Также фундамент на сваях востребован при строительстве быстровозводимых деревянных зданий из щитовых и каркасных панелей - в таком случае используются металлические винтовые сваи.
+.blockDesck 
+    h2.blockDesck__title.titleBlock КОНЦЕПЦИЯ ГОСТИНИЧНОГО <br> КОМПЛЕКСА «НЕСКУЧНЫЙ САД»
+        .blockDesck__row
+            .blockDesck__col-left
+            
+                p Закройте глаза и представьте идеальное место, где вам хотелось бы оказаться снова и снова.
+                p Гостиничный комплекс премиум-класса «Нескучный сад» создан нами специально для тех, кто ценит уединение и высокий уровень комфорта. В нем мы объединили заповедную природу Черноморского побережья, развитую инфраструктуру и совершенный сервис от собственного отельного оператора.
+                P Остановите мгновение в комплексе «Нескучный сад»: ощутите гармонию с окружающей природой, почувствуйте южное солнце, вдохните соленый воздух полной грудью, насладитесь лазурным морем в самом сердце Адлера
+            .blockDesck__col
+                .blockDesck__image 
+                    img(src="images/img3.jpg", alt="")
 
-.advantages 
-    ul.advantages__list 
-        li.advantages__item.itemList 
-            .itemList__title Быстро
-            .itemList__description Установка фундамента <br> занимает 1-2 дня
-        li.advantages__item.itemList 
-            .itemList__title Долговечно
-            .itemList__description Фундамент прослужит <br> вам более 100 лет
-        li.advantages__item.itemList 
-            .itemList__title Недорого
-            .itemList__description Стоимость готового фундамента <br> ниже многих аналогов
-        li.advantages__item.itemList 
-            .itemList__title Качественно
-            .itemList__description Фундамент имеет высокую <br> несущую способность
-        li.advantages__item.itemList 
-            .itemList__title Выгодно
-            .itemList__description Мы предлагаем скидки <br> постояным клиентам
+.blockAdvantages 
+    .blockAdvantages__row.blockAdvantages__row-left 
+        .blockAdvantages__col
+            h2.blockAdvantages__title.titleBlock «НЕСКУЧНЫЙ САД» — ЭТО РАЗВИТАЯ И СОВРЕМЕННАЯ ИНФРАСТРУКТУРА, ШИРОКИЙ СПЕКТР УСЛУГ, ВЫСОКОКЛАССНЫЙ СЕРВИС        
+    .blockAdvantages__row 
+        p Гостиничный комплекс «Нескучный сад» продуман таким образом, чтобы каждый гость, который планирует поездку в Сочи, смог провести время с максимальным комфортом и окунулся в атмосферу абсолютного спокойствия.
 
+    .blockAdvantages__row.blockAdvantages__row-img 
+        img(src="images/img5.jpg", alt="")
+        .blockAdvantages__row-wrapper
+            p Какая бы ни была цель визита – отпуск или подписание выгодного контракта – именно здесь можно провести свое время в гармонии и насладиться моментом.
+            
+            .blockAdvantages__advantagesList.advantagesList
+                .advantagesList__item 
+                    .advantagesList__bignum 10
+                    .advantagesList__text минут пешком - <br> и вы у моря
+                .advantagesList__item 
+                    .advantagesList__bignum 45
+                    .advantagesList__text минут до курорта <br> Красная Поляна
+                .advantagesList__item 
+                    .advantagesList__bignum 15
+                    .advantagesList__text минут до международного <br> аэропорта Сочи
+    .blockLocation
+        .blockLocation__row
+            .blockLocation__col-left
+                h2.blockLocation__title.titleBlock лучшее расположение
+                p.blockLocation__style «Нескучный сад» находится в одном из самых экологически чистых районов Сочи посреди моря и гор: вас будет окружать нетронутая природа, свежий воздух и особая тишина, которую нельзя прочувствовать в шумном мегаполисе.
+                p.blockLocation__style Из окон номеров гостиничного комплекса «Нескучный сад» открывается неповторимый вид на горные вершины и Черное море. А внутренняя территория с уникальным ландшафтным дизайном является гармоничным продолжением настроения, которое задает окружающий природный рельеф.
+                p.blockLocation__style Прогулка в тени аллеи кипарисов и вековых пицундских сосен, отдых на комфортных шезлонгах возле просторного бассейна на открытом воздухе, магическое пение цикад, доносящиеся с утопающих в зелени склонах гор, располагает к полной гармонии и покою.
 
-section.slider 
-    .slider__wrapp
-        .slider__col
-            .slider__title.titleBlock Где применяется железобетонный фундамент
-            .slider__description Данное решение часто используют при строительстве жилых домов, промышленных, хозяйственных и складских помещений, ангаров, мостовых конструкций, пирсов, оград, опор для трубопроводных систем.
-            .slider__description Универсальность основания позволяет строить на нем сооружения из любых материалов – дерева, панелей, кирпича, бетона и т. д.
-            .slider__button.contactTel__button
-                a(href="#") Оставить заявку
-        .slider__col
-            .caruselStyle__arrow 
-                img(src="images/icon/prev.svg", alt="")
-                img(src="images/icon/next.svg", alt="")
-            .slider__carusel.caruselStyle 
-                .caruselStyle__box
-                    .caruselStyle__item 
-                        img(src="images/slide1.jpg", alt="")
-                        .caruselStyle__titleSlide 
-                            div Здания из пеноблоков
-                    .caruselStyle__item 
-                        img(src="images/slide2.jpg", alt="")
-                        .caruselStyle__titleSlide 
-                            div Деревянные дома
-                .slider__elem.elem-progressbar 
-                    .elem-progressbar__roller
+                .blockLocation__wrapper
+                    .blockLocation__popup.mainScreen__buttonPopup 
+                        a.popup-open(href="#") Оставить заявку
+                        img(src="images/svg/icon-arrow.svg", alt="")
+                    .blockLocation__back
+                        .blockLocation__text Удобное месторасположение комплекса позволяет эффективно совмещать насыщенную экскурсионную программу и неспешные прогулки к морю, деловые встречи и выходы в свет 
+            .blockLocation__col
+                img(src="images/img6.png", alt="")
 
-section.typesFound 
-    .typesFound__wrapper
-        .typesFound__title.titleBlock Виды ж/б фундамента
+    .blockInvesticion
+        .blockInvesticion__row 
+            .blockInvesticion__col-left
+                div 
+                    img(src="images/img7.png", alt="")
+                div 
+                    img(src="images/img8.jpg", alt="")
+            .blockInvesticion__col
+                h2.blockInvesticion__title.titleBlock «НЕСКУЧНЫЙ САД» ДЛЯ ИНВЕСТИЦИЙ
+                p.blockLocation__style Для тех, кто уверенно смотрит в будущее: номер в гостиничном комплексе — это актив, который позволит сохранить и приумножить накопления, но при этом не тратить время на процесс ведения бизнеса. А доход от него будет в вашем распоряжении.
+                p.blockLocation__style Теперь ваша собственность находится под управлением надежного отельного оператора, который готов решать даже самые сложные задачи в круглосуточном режиме. 
+                p.blockLocation__style Смело планируйте и реализуйте концепции своих идей на территории комплекса «Нескучный сад». Коммерческие помещения различной площади идеально подойдут, как для бутика дизайнерской одежды, так и для магазина стильных аксессуаров. Выбирайте, что вам по душе!
+
+    .planirovki 
+        .planirovki__row 
+            .planirovki__col 
+                .planirovki__titleBlock
+                    h2.planirovki__title.titleBlock доступные планировки
+                    img(src="images/svg/icon-arrow.svg", alt="")
+
+                .planirovki__tab
+                    .tab
+                        .tab__row-wrapp
+                            .tab__item.tab__item--active(data-tabs-path="plan1") Планировка 1
+                            .tab__item(data-tabs-path="plan2") Планировка 2
+                            .tab__item(data-tabs-path="plan3") Планировка 3 
+                        .tab__row-wrapp
+                            .tab__item(data-tabs-path="plan4") Планировка 4
+                            .tab__item(data-tabs-path="plan5") Планировка 5
+                            .tab__item(data-tabs-path="plan6") Планировка 6
+                            .tab__item(data-tabs-path="plan7") Планировка 7
+                        
+                        .tab__description.tabs__content.tabs__content--active(data-tabs-target="plan1") 1-комнатная квартира, 50, 00 м2
+                            .tab__img
+                                img(src="images/tab-plan/slider-plan1.png", alt="")
+                        
+                        .tab__description.tabs__content(data-tabs-target="plan2") 2-комнатная квартира, 50, 00 м2
+                            .tab__img
+                                img(src="images/tab-plan/slider-plan2.png", alt="")
+                        
+                        .tab__description.tabs__content(data-tabs-target="plan3") 3-комнатная квартира, 50, 00 м2
+                            .tab__img
+                                img(src="images/tab-plan/slider-plan3.png", alt="")
+
+                        .tab__description.tabs__content(data-tabs-target="plan4") 4-комнатная квартира, 50, 00 м2
+                            .tab__img
+                                img(src="images/tab-plan/slider-plan4.png", alt="")
+
+                        .tab__description.tabs__content(data-tabs-target="plan5") 5-комнатная квартира, 50, 00 м2
+                            .tab__img
+                                img(src="images/tab-plan/slider-plan5.png", alt="")
+                        
+                        .tab__description.tabs__content(data-tabs-target="plan6") 6-комнатная квартира, 50, 00 м2
+                            .tab__img
+                                img(src="images/tab-plan/slider-plan6.png", alt="")
+                        
+                        .tab__description.tabs__content(data-tabs-target="plan7") 7-комнатная квартира, 50, 00 м2
+                            .tab__img
+                                img(src="images/tab-plan/slider-plan7.png", alt="")
+                    
+                    .tab__button.mainScreen__buttonPopup 
+                        a(href="#") Узнать цену
+                        img(src="images/svg/icon-arrow.svg", alt="")
     
-    .typesFound__row 
-        .typesFound__list 
-            .typesFound__item.itemFoundament 
-                img(src="images/primer1.png", alt="")
-                p Свайное поле фундамента <br> для дома
-            .typesFound__item.itemFoundament 
-                img(src="images/primer2.png", alt="")
-                p Фундамент каркасного дома <br> или бани
-            .typesFound__item.itemFoundament 
-                img(src="images/primer3.png", alt="")
-                p Фундамент для дома <br> или бани на ж/б сваях
-    .typesFound__row 
-        .typesFound__list 
-            .typesFound__item.itemFoundament 
-                img(src="images/primer4.png", alt="")
-                p Фундамент террасы <br> с крыльцом на ж/б сваях
-            .typesFound__item.itemFoundament 
-                img(src="images/primer5.png", alt="")
-                p Фундамент с обвязкой <br> швеллером для дома
-            .typesFound__item.itemFoundament 
-                img(src="images/primer6.png", alt="")
-                p Фундамент для дома <br> или бани из бруса
-
-section.table 
-    .table__wrapper 
-        .table__title.titleBlock Цены на ж/б сваи с доставкой и установкой
-    
-        table 
-            thead 
-                tr 
-                    th Серия
-                    th Вес
-                    th размер
-                    th цена
-            tbody 
-                tr 
-                    <td><span>Серия</span> С30.15</td>
-                    <td><span>Вес</span> 175 кг</td>
-                    <td><span>размер</span> 150х150х3000 мм</td>
-                    <td><span>цена</span> 4500 руб</td>
-                tr 
-                    <td><span>Серия</span> С30.15</td>
-                    <td><span>Вес</span> 175 кг</td>
-                    <td><span>размер</span> 150х150х3000 мм</td>
-                    <td><span>цена</span> 4500 руб</td>
-                tr 
-                    <td><span>Серия</span> С30.15</td>
-                    <td><span>Вес</span> 175 кг</td>
-                    <td><span>размер</span> 150х150х3000 мм</td>
-                    <td><span>цена</span> 4500 руб</td>
-                .collapse-js
-                    tr 
-                        <td><span>Серия</span> С30.15</td>
-                        <td><span>Вес</span> 175 кг</td>
-                        <td><span>размер</span> 150х150х3000 мм</td>
-                        <td><span>цена</span> 4500 руб</td>
+    .sliderBlock 
+        .sliderBlock__row 
+            .sliderBlock__col.sliderBlock__col-left 
+                h2.sliderBlock__title.titleBlock ИНФРАСТУКТУРа, КОТОРАЯ ДЕЙСТВИТЕЛЬНО ВДОХНОВЛЯЕТ 
+                p.sliderBlock__style Гостиничный комплекс задает атмосферу гармонии благодаря продуманному наполнению.
+                p.sliderBlock__style Днем вы сможете заняться спортом в просторном фитнес-зале с кардио-зоной, расслабиться и восстановить силы в SPA-комплексе, прогуляться по бутикам или же просто отдохнуть у бассейна с авторскими коктейлями.
+                p.sliderBlock__style А вечером — запланировать изысканный ужин от шеф-повара и поднять бокал шампанского за бесконечно прекрасные моменты жизни
             
-        .table__collapse.collapseBtn 
-            img(src="images/icon/arrow-collapse.svg", alt="").collapseBtn
-            div Раскрыть весь прайс
+            
+            .sliderBlock__col.slider 
+                .slider__arrow.arrow 
+                    img.arrow__prev.arrowButton__arrow--prev(src="images/slider/arrow-prev.svg", alt="")
+                    img.arrow__next.arrowButton__arrow--next(src="images/slider/arrow-next.svg", alt="")
+
+                .slider__content 
+                    div
+                        img(src="images/slider/img-slider1.jpg", alt="")
+                    div
+                        img(src="images/slider/img-slider2.jpg", alt="")
+                    div
+                        img(src="images/slider/img-slider3.jpg", alt="")
+                    div
+                        img(src="images/slider/img-slider1.jpg", alt="")
+                    div     
+                        img(src="images/slider/img-slider2.jpg", alt="")
+                    div
+                        img(src="images/slider/img-slider3.jpg", alt="")
+
+    .features
+        .features__title.titleBlock ПЕРЕЧЕНЬ ВОЗМОЖНОСТЕЙ <br> ГОСТИНИЧНОГО КОМПЛЕКСА
+        .features__row
+            .features__col 
+                div 
+                    img(src="images/svg/icon-star-black.svg", alt="")
+                    p Зона отдыха с просторным бассейном на открытом воздухе для идеального загара
+                div 
+                    img(src="images/svg/icon-star-black.svg", alt="")
+                    p Просторный тренажерный зал с оборудованием, отвечающим высоким мировым стандартам
+                div 
+                    img(src="images/svg/icon-star-black.svg", alt="")
+                    p Современный SPA-комплекс с широким спектром косметических и оздоровительных процедур для отдыха и восстановления сил
+            .features__col 
+                div 
+                    img(src="images/svg/icon-star-black.svg", alt="")
+                    p A ресепшен и услуги консьерж-сервиса для решения любых задач 24/7
+                div 
+                    img(src="images/svg/icon-star-black.svg", alt="")
+                    p Бутики многих известных брендов
+                div 
+                    img(src="images/svg/icon-star-black.svg", alt="")
+                    p Подземный паркинг с профессиональными парковщиками и видеонаблюдением для обеспечения максимальной безопасности
+
+    .desckBlock  
+        .desckBlock__col-left 
+            div     
+                img(src="images/img9.png", alt="")
+            .desckBlock__col
+                .desckBlock__title.titleBlock «НЕСКУЧНЫЙ САД» <br> ДЛЯ СЕМЬИ
+                p.blockLocation__style Для самых маленьких жителей комплекса предусмотрен Детский центр с разнообразными развивающими и развлекательными программами. 
+                p.blockLocation__style Здесь созданы все условия для того, чтобы ребенок нашел новых друзей, раскрыл свой потенциал через индивидуально подобранные образовательные программы и запомнил это время как яркий и счастливый момент из детства.
+                p.blockLocation__style Профессиональные воспитатели и опытные аниматоры уделят максимум внимания каждому маленькому гостю центра.
+
+    .popup-fade 
+        .popup
+            .popup__container 
+                img(src="images/svg/close-icon.svg", alt="").popup-close 
+                .titleBlock.popup__title  свяжитесь с нами
+                form.footer__contactForm.popupForm(action="#") 
+                    input.popup__inputStyle(type="text" placeholder="Ваше имя")
+                    input.popup__inputStyle(type="text" placeholder="Ваш телефон")
+                    div 
+                        input(type="checkbox")
+                        p Соглашаюсь с политикой конфиденциальности
+
+
+    footer.footer 
+        .footer__col-left 
+            .footer__title.titleBlock свяжитесь с нами
+            form.footer__contactForm(action="#") 
+                input(type="text" placeholder="Ваше имя")
+                input(type="text" placeholder="Ваш телефон")
+                div 
+                    input(type="checkbox")
+                    p Соглашаюсь с политикой конфиденциальности
+        .footer__col
+            .footer__rowWrapp
+                div 
+                    a.tel(href="tel:+79009999999") +7 900 999 99 99
+                div 
+                    .footer__social 
+                        a(href="#") 
+                            img(src="images/svg/telega-icon.svg", alt="")
+                        a(href="#") 
+                            img(src="images/svg/whats-icon.svg", alt="")
+            .footer__contactBlock
+                div.footer__contact mail@mail.ru
+                dv.footer__contact г. Сочи, ул. Ленина, 280А
+                .footer__linkPolitica    
+                    a.footer__politica(href="#") Политика конфиденциальности
+            .footer__rowWrapp
+                div © Все права защищены, 2022
+                div
+                    a(href="#").footer__logoCompany Разработано arkada-web.ru 
+                        img(src="images/svg/arkada.svg", alt="")
+
+
+
 
                 
-section.stepWork
-    .stepWork__wrapper
-        .typesFound__title.titleBlock Этапы сотрудничества
-
-    .stepWork__block.blockListStages 
-        .blockListStages__list
-            
-            .blockListStages__item
-                .blockListStages__boxImg
-                    img(src="images/step1.png", alt="")
-                div
-                    .blockListStages__box
-                        .blockListStages__title <span>#1</span> Осмотр объекта
-                        p Наш специалист выезжает на объект, составляет смету, согласовывает её с вами
-
-            .blockListStages__item
-                .blockListStages__boxImg
-                    img(src="images/step2.png", alt="")
-                div
-                    .blockListStages__box
-                        .blockListStages__title <span>#2</span> Заключение договора
-                        p Заключаем официальный договор, после чего вы оставляете предоплату.
-
-            .blockListStages__item 
-                .blockListStages__boxImg.blockListStages__boxImg-style
-                    img(src="images/step3.png", alt="")
-                div
-                    .blockListStages__box
-                        .blockListStages__title <span>#3</span> Подготовка
-                        p Осуществляем доставку оборудования на объект и делаем разметку свайного поля
-            
-            
-            .blockListStages__item 
-                .blockListStages__boxImg
-                    img(src="images/step4.png", alt="")
-                div
-                    .blockListStages__box
-                        .blockListStages__title <span>#4</span> Забивка свай
-                        p Устанавливаем за 1-2 дня, в зависимости от сложности. Окончательно рассчитваемся
-                
+                        
 
 
-section.photoObject 
-    .photoObject__wrapper 
-        .typesFound__title.titleBlock Фотографии объектов
 
-        .photoObject__list 
-            .photoObject__item  
-                img(src="images/photo-object1.jpg", alt="")
-            .photoObject__item  
-                img(src="images/photo-object1.jpg", alt="")
-            .photoObject__item  
-                img(src="images/photo-object1.jpg", alt="")
-        .photoObject__list 
-            .photoObject__item  
-                img(src="images/photo-object1.jpg", alt="")
-            .photoObject__item  
-                img(src="images/photo-object1.jpg", alt="")
-            .photoObject__item  
-                img(src="images/photo-object1.jpg", alt="")
+
+
 
 
 
@@ -203,8 +263,3 @@ section.photoObject
 
 
 
-
-
-
-
-            

@@ -7,15 +7,23 @@ var settings = {
     offset: '20px', /* gutter width px || % || rem */
     mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
     container: {
-        maxWidth: '1200px', /* max-width оn very large screen */
+        maxWidth: '1600px', /* max-width оn very large screen */
         fields: '20px' /* side fields */
     },
     breakPoints: {
+        xxl: {
+            width: '1400px'
+        },
+        xl: {
+            width: '1200px'
+            
+        },
         lg: {
-            width: '1500px'
+            width: '960px'
         },
         md: {
-            width: '960px'
+            width: '768px',
+            fields: '15px' /* set fields only if you want to change container.fields */
         },
         sm: {
             width: '768px',

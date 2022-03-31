@@ -1,548 +1,663 @@
+// *
+//    outline: solid red;
+
+body
+    background-color bodyColor
+    overflow-x: hidden;
+    // width 100%
+html
+    sm(overflow-x, hidden)
 .mainScreen
-    display flex
-    height: 81.4rem
-    &__titleMain
-        margin-top 20rem
-        fontSizeH1()
-        font-family $ff5
-        color #fff
-    &__col-left
-        background-color: $dark
-        padding-bottom 10rem
-        &-wrap
-            wrapper()
-            // max-width: 1500px
-            // margin: 0 auto
-            display flex
-            flex-direction: column
-            justify-content: space-between
-            padding-left 6%
-            padding-right 2rem
-            // margin-left 16rem
-            lg(padding-left,2rem)
-            lg(margin-left,5rem)
-            xs(margin-left,0rem)
-    &__col-right
-        background: url(../images/main-photo.jpg)
-        width 60%
-        background-repeat: no-repeat
-        background-size: cover
-        lg(width, 87%)
-    &__sub
-        margin-top 4.5rem
-        color #fff
-        font-family $ff 
-        font-size 2rem
-        font-weight: 400
-    &__form
-        margin-top 10rem
-        border-radius: 8px
-        background-color: #fff
-        width: calc(70% - 30px);
-        height 62px
-  .mainScreen__titleMain:before
-        margin-bottom 2rem
-        display block
-        content ""
-        width 20rem
-        height 2px
-        background-color: $colorElem
-    
-.contactTel
-    display flex
-    align-items: center
-    justify-content: space-around
-    height: 100%
-    &__number
-        font-size 16px
-        color #646464
-        font-family $ff 
-        font-weight: 400
-        border: none
-    &__button
-        background-color $colorElem
-        width 19.4rem
-        height 4.6rem
-        color #fff
-        border: none
-        border-radius: 6px
-        font-size 18px
-        font-family $ff3
-    
-.block 
-    margin-top 8%
-    wrapper()
-    &__col
-        width 48%
-        sm(width, 100%)
-        sm(margin-top, 1rem)
-        
-    &__col img 
-        width 100%
+    font-size 10px
+    sm(width, 100%)
     &__row 
+        position relative
+        display flex
+        sm(display, block)
+    &__row:after
+        display block
+        position: absolute
+        content " "
         width 100%
-        display flex
-        justify-content: space-between
-        sm(flex-wrap, wrap)
-    &__subTitle
-        fontSizeH2()
-        font-family $ff5
-    &__subTitle:before
-        margin-bottom 2rem
-        display block
-        content ""
-        width 20rem
-        height 2px
-        background-color: $colorElem
-    &__text
-        margin-top 1.7rem
-        font-family $ff 
-        font-weight: 400
-        fontSizeText()
-        line-height: 28px;
-
-.itemList
-    &__title 
-        fontSizeText()
-        font-family $ff
-        font-weight: 600
-    &__description
-        font-size 1.7rem
-        line-height: 150%
-        font-family $ff
-
-.advantages 
-    margin-top 9rem
-    wrapper()
-    &__list
-        border-top: 1px solid $colorElem
-        padding-top 2rem
-        position relative
-        display flex
-        align-items: center
-        justify-content: space-between
-        text-align center
-        sm(border-top, none)
-        sm(flex-wrap, wrap)
-        sm(justify-content, center)
-
-.itemList
-    display flex
-    flex-direction: column
-    align-items: center
-    &__title
-        margin-top 2.6rem
-        font-size 2rem
-    &__description
-        margin-top 1.7rem
-        font-size 1.7rem
-        color #424242
-
-.itemList:after
-    margin-top -2.5rem
-    content ""
-    display block
-    position: absolute
-    width 10px
-    height 10px
-    border-radius: 50%
-    background-color: $colorElem
-.itemList:before
-    margin-top -3.4rem
-    content ""
-    display block
-    position: absolute
-    width 26px
-    height 26px
-    border-radius: 50%
-    border: 1px solid $colorElem
-    background-color: #fff
-
-.slider 
-    margin-top 16rem
-    background-color: $dark
-    height: 80rem
-    display flex
-    &__wrapp 
-        wrapper()
-        display flex
-        align-items: center
-    &__button
-        display flex
-        align-items: center
-        justify-content: center
-    &__description
-        margin-top 3.5rem
-        fontSizeText()
-        color #fff
-        font-family $ff
-        Line-height 28px
-        font-weight: 400
-    &__col
-        position relative
-        width 50%
-    &__title
-        margin-bottom 3.5rem
-    &__button
-        margin-top 5.6rem
-
-.caruselStyle
-    &__box
-        display flex
-        justify-content: space-between
-    &__arrow
-        position: absolute
-        width 110%
-        display flex
-        margin-left: -5%
-        justify-content: space-between
-        align-items: center
-        height 100%
-    &__item
-        position relative
-    &__titleSlide
-        margin-bottom 35px
+        height 1px
+        background-color fontColor
         bottom 0
-        margin auto
-        left 0
-        right 0
-        overflow: auto
-        position: absolute
-        background-color: #F1F5F8
-        height 5rem
-        width 29rem
+        sm(display, none)
+        z-index -1
+    &__bigTitle
         display flex
         align-items: center
-        justify-content: center
-        backdrop-filter: blur(10px);
-        div 
-            fontSizeText()
-            font-family $ff
-
-.typesFound 
-    margin-top 10rem
-    wrapper()
-    &__title 
-        color #000 !important
-        margin-bottom 7rem
-    &__title:before
-        margin-bottom 2rem
-        display block
-        content ""
-        width 20rem
-        height 2px
-        background-color: $colorElem
-    &__list
+        position relative
+        font-size fonth1
+        font-family fontFamilyMain
+        text-transform uppercase
+        color fontColor
+        sm(display, block)
+        
+    &__headerWhats
+        float: right 
+        margin-top 1em
         display flex
-        justify-content: space-between
-        align-items: center
-    &__row
-        border-bottom 1px solid #000
-.itemFoundament
-    padding-top 5rem
-    border-right: 1px solid #000
-    width 600px
-    display flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    // padding-right 130px
-    p 
-        margin-top 4.4rem
+        margin-right 50px
+        sm(float, left )
+        sm(margin-right, 10px)
+        sm(margin-left, 10px)
+        sm(margin-bottom, 30px)
+        sm(align-items, center)
+    &__headerWhats img
+        margin-right 2em
+        sm(margin-right, 10px)
+    &__headerWhats a
         font-size 20px
-        font-family $ff 
-        text-align center  
-        margin-bottom 6rem
+        font-family fontSecond-r
+        color fontColor
+    &__buttonPopup
+        display flex
+        margin-top 60px
+    &__buttonPopup img
+        margin-left 2.5em
+    &__buttonPopup a
+        font-size fonth2
+        text-transform uppercase
+        font-family fontSecond-r
+        color fontColor
+    &__blockTitleBtn
+        min-width: 500px
+        position relative
+        margin-top 13.7em
+        display flex
+        flex-direction: column
+        justify-content: space-between
+        height 340px
+        margin-left 8em
+        sm(margin-left, 10px)
+        sm(margin-top,0em)
+        sm(display, block)
+        sm(min-width, 100%)
+    &__col
+        sm(display, none)
+.mainScreen__wrapImg
+    position absolute
+    left: 57%
+    sm(display, none)
+   
+.belowMain
+    margin-top 8em
+    // z-index 2
+    sm(margin-top,3em)
+    &__block
+        display flex
+        align-items: center
+        xxl(flex-wrap, wrap)
+        sm(display, block)
+    &__block img
+       sm(width, 100%)
+       sm(margin-left, -10px)
 
-.itemFoundament:nth-child(3n)
-    border-right: none
-.typesFound__row:nth-child(3n)
-    border-bottom: none
-
+.belowMain div
+    margin-bottom 10%
+    font-size fonth2
+    color fontColor
+    text-transform uppercase
+    font-family fontFamilyMain
+.belowMain img
+    margin-right 35px
+    sm(margin-bottom,20px)
+    sm(margin-right, 10px)
 
 .titleBlock
-    color #fff
-    fontSizeH2()
-    font-family: $ff5
-    line-height: 65px;
+    font-size fontTitleBlock
+    color fontColor
+    font-family fontFamilyMain
+    
 
-
-.elem-progressbar 
-    position relative
-    margin-top 5rem
-    width 100%
-    height 5px
-    background: rgba(255, 255, 255, 0.1)
-    z-index 4
-    &__roller
-        width 20%
-        height 5px
-        position: absolute
-        top 0
-        background-color: #fff
-        z-index 5
-
-.table
-    margin-top 15rem
-    &__wrapper
-        wrapper()
+.blockDesck
+    margin-top 18em
+    padding-left 50px
+    padding-right 50px
+    sm(margin-top,500px )
+    sm(padding-right, 0px)
+    sm(padding-left, 10px)
     &__title
-        color #000
-        text-align: center 
-    &__title:after
-        margin-bottom 2rem
+        margin-bottom 1.5em
+    &__row
+        margin-top 50px
+        width 100%
+        justify-content: space-between
+        display flex
+        align-items: center
+        sm(display, block)
+    &__col-left
+        width 55%
+        padding-right 50px
+        sm(width, 100%)
+        sm(padding-right, 0px)
+    &__col-left p
+        margin-top 0.8em
+        font-size 22px
+        font-family fontSecond-r
+        color fontColor
+    &__col
         display block
-        margin: 0 auto
-        content ""
-        width 20rem
-        height 2px
-        background-color: $colorElem
-//Таблицы
-* {
-    box-sizing: border-box;
-    font-family: "Avenir", "Helvetica", sans-serif;
-}
+        width 45%
+        position relative
+        background-position: left
+        z-index 2
+        sm(width, 100%)
+        sm(margin-top, 20px)
+    &__col:before
+        display block
+        position: absolute
+        top 50%
+        left 80%
+        transform: translate(-80%,-50%)
+        content: url(../images/back2.png)
+        z-index -1
+        sm(display, none)
 
-table 
-    border-collapse: collapse;
-    text-align: center;
-    width: 100%;
-    // padding-left: 150px
-    // padding-right 150px
-table th
-    font-size 25px
-    font-family $ff4 
-    text-transform uppercase
-table td 
-    font-size 20px
-    font-family $ff 
-table tr
-    height 94px
-thead tr    
-    background-color: #fff !important
-tr:nth-child(2n+1)
-    background-color: rgba(23, 27, 43, 0.11)
-
-table th, table td 
-    padding: 10px 20px;
-
-table td span {
-    background: #eee;
-    color: dimgrey;
-    display: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 5px;
-    position: absolute;
-    text-transform: uppercase;
-    top: 0;
-    left: 0;
-}
-
-/* Simple CSS for flexbox table on mobile */
-@media(max-width: 800px) {
-    table thead {
-        left: -9999px;
-        position: absolute;
-        visibility: hidden;
-    }
-    table tr {
-        border-bottom: 0;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-bottom: 40px;
-    }
-    table td {
-        border: 1px solid;
-        margin: 0 -1px -1px 0;
-        padding-top: 35px;
-        position: relative;
-        width: 50%;
-    }
-     table td span {
-        display: block;
-    }
-    tr:nth-child(2n+1){
-        background-color: #fff
-    }
-    table tr{
-        height 121px
-    }   
-}
-
-.table__collapse
-     margin-top 5rem
-
-.collapseBtn 
-    justify-content: center
+.blockAdvantages 
+    padding-left 50px
+    width 100%
+    position: relative
+    background-color: backColor
+    height: 55em
+    sm(padding-left, 10px)
+    sm(height, 70em)
+    &__title
+        padding-top 96px
+        color #fff
+        sm(padding-top,20px)
+        sm(line-height, 35px)
+    &__col
+        width 59%
+        sm(width, 100%)
+    &__col p
+        color #fff
+        font-size fontText
+        font-family fontSecond-r
+    &__row p
+        margin-top 8em
+        width 50%
+        color #fff
+        font-size fontText
+        font-family fontSecond-r
+        sm(width, 100%)
+        sm(margin-top, 2em)
+    &__row-img 
+        margin-top 5em
+        display flex
+        sm(display, block)
+    &__row-img p
+        margin-left 18em
+        width 49% 
+        sm(width, 100%)
+        sm(margin-left, 0em)
+.blockAdvantages__row-left 
     display flex
     align-items: center
+    justify-content: center
+.blockAdvantages:after
+    top: 0
+    left: -8%
+    position: absolute
+    content: url(../images/back3.png)
+    sm(display, none)
+.blockAdvantages:before
+    top 210px
+    right:2em
+    position: absolute
+    content: url(../images/img4.png)
+    sm(display, none)
 
-    div 
-        margin-left 20px
-        font-size 20px
-        font-family $ff
+.advantagesList
+    padding-top 9em
+    display flex
+    justify-content: space-around
+    sm(display, block)
+    sm(padding-top,4em)
+    &__item 
+        text-align center
+        sm(margin-bottom, 20px)
+    &__bignum
+        font-size fonth1
+        color fontColor
+        font-family fontFamilyMain
+    &__text
+        font-size fontText
+        font-family fontSecond-r
+        color #595959
 
-.stepWork 
-    margin-top 15rem
-    wrapper()
-    &__block
-        margin-top 15rem
-.stepWork__title
-    color #000
-
-.blockListStages 
-    &__boxImg
-        height 200px
-        margin-top -100px
-        // position: absolute
-        // top -100p
-        &-style
-            margin-top -180px
-    &__item
-        position relative
-        max-width 314px
-        height 233px
+.blockLocation
+    padding-right 50px
+    margin-top 140px
+    sm(padding-right, 10px)
+    sm(margin-top,50px)
+    &__row
         width 100%
-        border: 1px solid $colorElem
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between
-    &__list 
-        width 100%
+        height 100%
         display flex
         justify-content: space-between
         align-items: flex-start
-    &__title 
-        margin-bottom 10px
-        font-size 20px
-        font-family $ff3
-    &__title span 
-        color $colorElem
-    &__item p
-        fontSizeText()
-        font-family $ff
-        margin-bottom 20px
-    &__box
-        width 290px
-        text-align center
-.blockListStages__boxImg div
-    height 300px
-
-.photoObject
-    margin-top 10rem
-    &__wrapper
-        wrapper()
-    &__list 
-        margin-top 20px
-        width 100%
-        justify-content: space-between
-        align-items: center
-        display flex
-.contact
-    margin-top 10rem
-    &__wrapper
-        wrapper()
-    &__row
-        display flex
-        
+        sm(display, block)
     &__title
-        color #000 !important
-    &__col
-        position relative
-        width 50%
-    &__titleForm
-        padding-top 7rem
-        fontSizeH2()
-        color #fff
-        font-family $ff5
-    &__subtitleForm
-        margin-top 2rem
-        fontSizeText()
-        color #fff
-        font-family $ff
-    &__formBox
-        margin-left 20%
+        margin-bottom 1em
+    &__col-left
+        width 58%
+        margin-right 50px
         display flex
         flex-direction: column
-        justify-content: center
-        align-items: center
-        position relative
-        z-index 999
-
-
-.contact__col-dark:before
-    content " "
-    width: 50vw;
-    height 100%
-    position absolute
-    top 0
-    bottom: 0
-    left 0
-    right 0
-    background-color: $dark
-    display block
-    z-index 99
-
-.contactForm 
-    margin-top 6rem
-    text-align center
-    &__input
-        padding-left 15px
-        margin-top 3rem
-        max-width 564px
-        width 100%
-        height 62px
-        fontSizeText()
-        border-radius: 8px
-        color #444444
-    &__button
-        margin-top 3rem
-        margin-bottom 12rem
-        
-.boxDate
-    height: 192px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+        sm(width, 100%)
+        // height 754px
+        // justify-content: space-evenly
+        // align-items: baseline
     &__text
+        font-size fontText 
+        font-family fontSecond-r
+        color #595959
+        width 430px
+        sm(width, 100%)
+    &__wrapper
         display flex
-        font-size 20px
-        font-family $ff
-        &-address
-            width 55%
-    &__text span
-        color #7B7B7B
-    &__social 
+        align-items: start
+        justify-content: space-between
+        sm(display, block)
+    &__back
+        padding-top 100px
+        padding-left 100px
+        width 670px
+        position relative
+        sm(width, 100%)
+        sm(padding-left, 0px)
+        sm(padding-top, 20px)
+    &__back:after
+        top: 0
+        left: 0
+        position: absolute
+        content: url(../images/svg/backLocation.svg)
+        sm(display, none)
+    &__popup
+        width 100%
+    &__col
+        sm(margin-top, 30px)
+.blockLocation__style
+    margin-top 20px
+    font-family fontSecond-r
+    font-size fontText
+    color #595959
+
+.blockInvesticion
+    margin-top 120px
+    display flex
+    sm(display, block)
+    sm(margin-top,30px)
+    &__row
+        width 100%
         display flex
-        width: 100px;
-        justify-content: space-between;
-    &__info
-        margin-top 11rem
-        height: 92px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        font-size 15px
-        color #7B7B7B
-    &__info p
-        fontSizeText()
-    &__infoRow
-        margin-top 2.5rem
+        justify-content: space-between
+        sm(display, block)
+    &__col-left
+        position relative
         display flex
-        font-size: 15px
-        color #7B7B7B
-        div 
-            display flex
-            margin-left 50px
-        div 
-            img
-                margin-left 10px
-    &__copyright
-        margin-top 25px
-        font-family $ff
-        fontSizeText()
+        width 55%
+        sm(width, 100%)
+     &__col-left div
+         margin-right 30px
+         sm(margin-right, 10px)
+    &__col
+        padding-right 50px
+        width 43%
+        sm(width, 100%)
+        sm(padding-right, 10px)
+        sm(margin-top, 30px)
+.blockInvesticion__col-left:after
+    position: absolute
+    right -100px
+    bottom -70px
+    display block
+    content: url(../images/svg/backInvesticion.svg)
+    sm(display, none)
+    // width 500px
+    // height 500px
+.planirovki
+    margin-top 100px
+    margin-right 50px
+    sm(margin-top, 30px)
+    sm(margin-right, 10px)
+    &__titleBlock
+        display flex
+        sm(display, block)
+    &__titleBlock img
+        sm(display, none)
+    &__row
+        position relative
+        sm(margin-bottom, 110%)
+    //     display flex
+    //     justify-content: space-between
+    //     sm(display, block)
+    // &__col:nth-child(2)
+    //     display flex
+    //     justify-content: center
+    //     width 45%
+    //     sm(margin-top, 30px)
+    //     sm(width, 100%)
+    //     sm(display, block)
+       
+
+.tab
+    // position relative
+    margin-top 77px
+    sm(margin-top,10px)
+    &__row-wrapp
+        display flex
+        margin-bottom 50px
+        sm(display, block)
+        sm(margin-bottom,0px)
+    &__item 
+        margin-right 45px
+        font-size fontText
+        font-family fontSecond-r
+        color #595959
+        cursor pointer
+        sm(margin-top, 10px)
+    &__description
+        position relative
+        margin-top 80px
+        font-size fontText
+        font-family fontSecond-sb
+        color #595959
+    &::before
+        position: absolute
+        bottom 140px
+        display block
+        content: ''
+        width 50%
+        height 1px
+        border-top: 2px dashed #B4C4D0
+        border-bottom-width: 2px;
+        sm(margin-top, 20px)
+    &__button
+        margin-top 60px
+    &__img
+        position: absolute
+        right 8%
+        bottom 0
+        sm(top, 150px)
+.tabs__content
+    display none
+.tabs__content--active
+    display block
+.sliderBlock
+    overflow-x hidden
+    position relative
+    padding 100px 0px 0px 100px
+    margin-top 200px
+    background-color: backColor
+    height: 700px
+    sm(padding,10px)
+    sm(margin-top,30px)
+    sm(margin-left, -10px)
+    sm(height, 100%)
+    &__row
+        display flex
+        sm(display, block)
+        sm(margin-bottom, 20px)
+    &__title
+        color #fff
+    &__style
+        margin-top 30px
+        font-family fontSecond-r
+        color #fff
+        font-size fontText
+    &__col
+        position relative
+        width 35%
+        sm(width, 100%)
+    &__col-left 
+        width 80%
+        margin-right 20px
+        sm(width, 100%)
+        
+.slick-list
+    padding:0 20% 0 0;
+    sm(padding,0)
 
 
+.sliderBlock:after
+    position: absolute
+    display block
+    bottom: -5%
+    left 0%
+    content: url(../images/img-backSlider.png)
+    sm(display, none)
+
+    
+.slider
+    &__content
+        width 700px
+        margin-top: 3%
+        sm(width, 100%)
+    &__content img
+        width 100%
+
+/* Слайды */
+.slick-slide 
+  margin: 0 10px;
+  sm(margin, 0)
+
+/* Родительский элемент */
+.slick-list 
+  margin: 0 -10px;
+  sm(margin, 0)
+
+.arrow
+    display flex
+    margin-bottom 40px
+    sm(padding,10px)
+    cursor pointer
+    &__next
+        margin-left 20px
+
+.features
+    margin-top 110px
+    sm(margin-top, 120px)
+    &__title
+        text-align center
+        margin-bottom 120px
+        sm(margin-bottom, 20px)
+    &__row
+        display flex
+        align-items: flex-start
+        sm(display, block)
+    &__col 
+        height 300px
+        display flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        sm(height, 250px)
+        sm(margin-top, 20px)
+    &__col div
+        width 70%
+        display flex
+        align-items: flex-start
+        sm(width, 100%)
+    &__col div p
+        margin-left 10px
+        font-family fontSecond-r
+        font-size fontText
+        color #595959
+
+.desckBlock
+    margin-top 150px
+    sm(margin-top, 30px)
+    &__col-left
+        display flex
+        justify-content: space-between
+        sm(display, block)
+    &__col
+        width 55%
+        sm(width, 100%)
+    &__title
+        margin-top 50px
+        margin-bottom 70px
+        sm(margin-top,0px)
+        sm(margin-bottom, 30px)
+
+.footer
+    margin-left -50px
+    display flex
+    sm(display, block)
+    sm(margin-left, -10px)
+    sm(margin-top, 30px)
+    &__col
+        padding-bottom 50px
+        display flex
+        flex-direction: column
+        justify-content: space-between
+        padding-top 70px
+        background-color: backColor
+        color #fff
+        width 60%
+        sm(padding-bottom,20px)
+        sm(padding-top, 30px)
+        sm(width, 100%)
+        sm(display, block)
+    &__col-left
+        padding-bottom 50px
+        padding-top 70px
+        padding-left 50px
+        width 40%
+        margin-right 10px
+        background-color: backColor
+        sm(width, 100%)
+        sm(padding-left, 10px)
+        sm(padding-bottom, 10px )
+    &__title
+        color #fff
+    &__rowWrapp
+        padding-left 50px
+        padding-right 50px
+        display flex
+        font-family fontSecond-r
+        font-size fontText
+        justify-content: space-between
+        sm(display, block)
+        sm(padding-left, 10px)
+        sm(margin-top, 10px)
+    &__social
+        display flex
+        sm(margin-top,20px)
+    &__social a img
+        margin-left 20px
+        sm(margin-left, 0px)
+        sm(margin-right, 20px)
+    &__contactBlock
+        margin-top -10%
+        padding-left 50px
+        font-family fontSecond-r
+        font-size fontText
+        sm(padding-left, 10px)
+    &__logoCompany
+        display flex
+        sm(margin-top, 30px)
+    &__logoCompany img
+        margin-left 10px
+    &__contact
+        margin-top 50px
+        margin-bottom 20px
+    &__linkPolitica
+        margin-top 70px
+        sm(margin-top,10px)
+
+.footer__contactForm
+    margin-top 50px
+    display flex
+    flex-direction: column
+    width 80%
+    sm(width, 100%)
+    sm(display, block)
+    sm(margin-top,0px)
+.footer__contactForm input
+    padding-bottom 10px
+    margin-top 50px
+    background-color: backColor
+    color #fff
+    border none
+    border-bottom 1px solid #fff
+    sm(margin-top, 30px)
+.footer__contactForm input::placeholder 
+    font-family fontSecond-r
+    font-size fontText
+    color #fff
+.footer__contactForm div p
+    margin-top 52px
+    font-size 18px
+    margin-left 10px
+    color #fff
+    font-family fontSecond-r
+    sm(margin-top, 20px)
+.footer__contactForm div
+    display flex
+    align-items: center
+
+//МОДАЛКА
+.popup-fade
+    display none
+.popup-fade:before 
+	content: '';
+	background: #fff;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	opacity: 0.7;
+	z-index: 3;
+
+.popup {
+	position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: backColor;
+	z-index: 5;
+	opacity: 1;
+    padding 60px 90px
+    // sm(padding, 20px 70px)
+    width 100%
+    max-width: 770px
+	// width 770px
+    sm(padding, 40px 10px)
+ 
+}
+
+
+.popup__title
+    color #fff !important
+    text-align center
+
+.popupForm
+    text-align center
+    margin 0 auto
+    width 100%
+.popup__inputStyle
+    width 100%
+.popup-close 
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+    
+
+@media (max-width: 1600px) 
+    .blockAdvantages:before
+        right 4em
+
+@media (max-width: 1420px)   
+    .belowMain
+        &__block
+            flex-wrap: wrap
+    .belowMain div
+        margin-bottom 20%
+    .tab__item
+        margin-right 20px
