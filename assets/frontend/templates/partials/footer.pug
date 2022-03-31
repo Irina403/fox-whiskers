@@ -1,0 +1,40 @@
+section.contact
+    .contact__wrapper
+        .contact__row
+            .contact__col
+                .contact__title.titleBlock Контакты
+                .contact__box.boxDate 
+                    .boxDate__text <span>Телефон: </span> 
+                        a(href="#") +7 (965) 722-76-76, +7 (930) 174-20-20  
+                    .boxDate__text <span>E-mail: </span> 
+                        a(href="#") erni_s@mail.ru 
+                    .boxDate__text.boxDate__text-address <span>Адрес: </span> г.Тверь Октябрьский проспект, 70 ТЦ Тандем (выставка Дома и дачи)
+                .boxDate__social 
+                    a(href="#") 
+                        img(src="images/icon/vk.svg", alt="")
+                    a(href="#") 
+                        img(src="images/icon/fc.svg", alt="")
+                    a(href="#") 
+                        img(src="images/icon/inst.svg", alt="")
+                
+                .boxDate__info 
+                    p ИП Суханов Эрнест Игоревич
+                    p ИНН: 6905001116053
+                    p ОГРН: 315504000012782
+
+                .boxDate__copyright © 2022 ИП Суханов Эрнест Игоревич
+
+                .boxDate__infoRow 
+                    p Политика конфиденциальности
+                    div
+                        p Разработано arkada-web.ru 
+                        img(src="images/icon/logo-mini.svg", alt="")
+            .contact__col.contact__col-dark
+                .contact__formBox
+                    .contact__titleForm Оставьте заявку
+                    .contact__subtitleForm Мы свяжемся с вами в ближайшее время и ответим на все вопросы
+
+                    form(action="#").contactForm
+                        input.contactForm__input(type="text" placeholder="Введите имя")
+                        input.contactForm__input(type="text" placeholder="Введите телефон")
+                        input(type="submit" value="Оставить заявку").contactForm__button.contactTel__button
