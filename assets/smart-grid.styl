@@ -9,21 +9,32 @@ $break_sm = 768px
 $break_xs = 480px
 
 $offset = 20px
+$offset_xxl = $offset
+$offset_xl = $offset
+$offset_lg = $offset
 $offset_md = $offset
 $offset_sm = $offset
 $offset_xs = $offset
 
 $offset_one_side = ($offset / 2)
+$offset_xxl_one_side = ($offset_xxl / 2)
+$offset_xl_one_side = ($offset_xl / 2)
+$offset_lg_one_side = ($offset_lg / 2)
 $offset_md_one_side = ($offset_md / 2)
 $offset_sm_one_side = ($offset_sm / 2)
 $offset_xs_one_side = ($offset_xs / 2)
 
 $fields = 20px
+$fields_md = 15px
 $fields_sm = 15px
 
 wrapper-full()
     padding-left $fields
     padding-right $fields
+
+    +md-block()
+        padding-left $fields_md
+        padding-right $fields_md
 
     +sm-block()
         padding-left $fields_sm
@@ -74,6 +85,18 @@ size($n)
     $val = 100% / $columns * $n
     width "calc(%s - %s)" % ($val $offset)
 
+size-xxl($n)
+    $val = 100% / $columns * $n
+    xxl(width, "calc(%s - %s)" % ($val $offset_xxl))
+
+size-xl($n)
+    $val = 100% / $columns * $n
+    xl(width, "calc(%s - %s)" % ($val $offset_xl))
+
+size-lg($n)
+    $val = 100% / $columns * $n
+    lg(width, "calc(%s - %s)" % ($val $offset_lg))
+
 size-md($n)
     $val = 100% / $columns * $n
     md(width, "calc(%s - %s)" % ($val $offset_md))
@@ -111,6 +134,84 @@ shift-padding-left($n)
 shift-padding-right($n)
     $val = 100% / $columns * $n
     padding-right "calc(%s + %s)" % ($val $offset_one_side)
+
+shift-xxl($n)
+    $val = 100% / $columns * $n
+    xxl(margin-left, "calc(%s + %s)" % ($val $offset_xxl_one_side))
+    xxl(margin-right, "calc(%s + %s)" % ($val $offset_xxl_one_side))
+
+shift-xxl-left($n)
+    $val = 100% / $columns * $n
+    xxl(margin-left, "calc(%s + %s)" % ($val $offset_xxl_one_side))
+
+shift-xxl-right($n)
+    $val = 100% / $columns * $n
+    xxl(margin-right, "calc(%s + %s)" % ($val $offset_xxl_one_side))
+
+shift-xxl-padding($n)
+    $val = 100% / $columns * $n
+    xxl(padding-left, "calc(%s + %s)" % ($val $offset_xxl_one_side))
+    xxl(padding-right, "calc(%s + %s)" % ($val $offset_xxl_one_side))
+
+shift-xxl-padding-left($n)
+    $val = 100% / $columns * $n
+    xxl(padding-left, "calc(%s + %s)" % ($val $offset_xxl_one_side))
+
+shift-xxl-padding-right($n)
+    $val = 100% / $columns * $n
+    xxl(padding-right, "calc(%s + %s)" % ($val $offset_xxl_one_side))
+
+shift-xl($n)
+    $val = 100% / $columns * $n
+    xl(margin-left, "calc(%s + %s)" % ($val $offset_xl_one_side))
+    xl(margin-right, "calc(%s + %s)" % ($val $offset_xl_one_side))
+
+shift-xl-left($n)
+    $val = 100% / $columns * $n
+    xl(margin-left, "calc(%s + %s)" % ($val $offset_xl_one_side))
+
+shift-xl-right($n)
+    $val = 100% / $columns * $n
+    xl(margin-right, "calc(%s + %s)" % ($val $offset_xl_one_side))
+
+shift-xl-padding($n)
+    $val = 100% / $columns * $n
+    xl(padding-left, "calc(%s + %s)" % ($val $offset_xl_one_side))
+    xl(padding-right, "calc(%s + %s)" % ($val $offset_xl_one_side))
+
+shift-xl-padding-left($n)
+    $val = 100% / $columns * $n
+    xl(padding-left, "calc(%s + %s)" % ($val $offset_xl_one_side))
+
+shift-xl-padding-right($n)
+    $val = 100% / $columns * $n
+    xl(padding-right, "calc(%s + %s)" % ($val $offset_xl_one_side))
+
+shift-lg($n)
+    $val = 100% / $columns * $n
+    lg(margin-left, "calc(%s + %s)" % ($val $offset_lg_one_side))
+    lg(margin-right, "calc(%s + %s)" % ($val $offset_lg_one_side))
+
+shift-lg-left($n)
+    $val = 100% / $columns * $n
+    lg(margin-left, "calc(%s + %s)" % ($val $offset_lg_one_side))
+
+shift-lg-right($n)
+    $val = 100% / $columns * $n
+    lg(margin-right, "calc(%s + %s)" % ($val $offset_lg_one_side))
+
+shift-lg-padding($n)
+    $val = 100% / $columns * $n
+    lg(padding-left, "calc(%s + %s)" % ($val $offset_lg_one_side))
+    lg(padding-right, "calc(%s + %s)" % ($val $offset_lg_one_side))
+
+shift-lg-padding-left($n)
+    $val = 100% / $columns * $n
+    lg(padding-left, "calc(%s + %s)" % ($val $offset_lg_one_side))
+
+shift-lg-padding-right($n)
+    $val = 100% / $columns * $n
+    lg(padding-right, "calc(%s + %s)" % ($val $offset_lg_one_side))
 
 shift-md($n)
     $val = 100% / $columns * $n
@@ -189,6 +290,30 @@ shift-xs-padding-left($n)
 shift-xs-padding-right($n)
     $val = 100% / $columns * $n
     xs(padding-right, "calc(%s + %s)" % ($val $offset_xs_one_side))
+
+xxl($name, $value)
+    @media screen and (max-width: $break_xxl)
+        {$name} $value
+
+xxl-block()
+    @media screen and (max-width: $break_xxl)
+        {block}
+
+xl($name, $value)
+    @media screen and (max-width: $break_xl)
+        {$name} $value
+
+xl-block()
+    @media screen and (max-width: $break_xl)
+        {block}
+
+lg($name, $value)
+    @media screen and (max-width: $break_lg)
+        {$name} $value
+
+lg-block()
+    @media screen and (max-width: $break_lg)
+        {block}
 
 md($name, $value)
     @media screen and (max-width: $break_md)

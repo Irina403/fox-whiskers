@@ -21,16 +21,21 @@
           ul.nav-contact
             li.nav-contact__item
               img(src="images/svg/icon-map.svg", alt="")
-              .nav-contact__text Москва <br> Ленина 5
+              div
+                .nav-contact__text Москва <br>
+                .nav-contact__text-min Ленина 5
 
             li.nav-contact__item
               img(src="images/svg/icon-tel.svg", alt="") 
-              .nav-contact__text Телефон
-              a(href="tel:+79008888888").nav__link +7(900)888-88-88
-        
+              div
+                .nav-contact__text Телефон
+                a(href="tel:+79008888888").nav-contact__text-min +7(900)888-88-88
+          
             li.nav-contact__item
               img(src="images/svg/icon-clock.svg", alt="") 
-              .nav-contact__text Режим работы <br> с 9:00 до 21:00
+              div
+                .nav-contact__text Режим работы
+                .nav-contact__text-min с 9:00 до 21:00
 
 
         .mobile-wrapp

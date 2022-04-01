@@ -1,7 +1,7 @@
 .mainScreen 
     .mainScreen__row 
         .mainScreen__col.col-left 
-            h1.col-left__title Ветеринарная клиника
+            h1.col-left__title Ветеринарная <br> клиника
             .col-left__text Круглосуточная помощь вашим любимцам в клиниках с соверменным оборудованием и 
             .col-left__btn.btnMain 
                 a(href="#") Записаться на прием
@@ -15,129 +15,135 @@
                     div Новейшее оборудование
                 .listAdvantage__item 
                     img(src="images/svg/pow.svg", alt="") 
-                    div Отсутствие очередей
-.servicesBlock 
-    .servicesBlock__row 
-        .servicesBlock__col 
-            h2.servicesBlock__title.titleBlock Ветеринарная клиника
-            p.servicesBlock__text.textBlock Основная цель работы нашей ветеринарной клиники «Усы Лисы» — это оказание ветеринарной помощи для поддержания и восстановления здоровья наших домашних питомцев.
-            .servicesBlock__btn.btnMain 
-                a(href="#") Подробнее
+                    div Отсутствие <br> очередей
+.wrapper
+    .servicesBlock 
+        .servicesBlock__row 
+            .servicesBlock__col.col-left 
+                h2.servicesBlock__title.titleBlock Услуги <br> нашей клиники
+                p.servicesBlock__text.textBlock Основная цель работы нашей ветеринарной клиники «Усы Лисы» — это оказание ветеринарной помощи для поддержания и восстановления здоровья наших домашних питомцев.
+                .servicesBlock__btn.btnMain 
+                    a(href="#") Подробнее
 
-        .servicesBlock__col 
-            .servicesBlock__services 
-                .servicesList 
-                    .servicesList__item
-                        .servicesList__wrapp 
-                            img(src="images/svg/icon-services1.svg", alt="") 
-                            .servicesList__title Терапия
-                            .servicesList__text Осмотр, диагностика, лечение,консультации.
-                    .servicesList__item
-                        .servicesList__wrapp 
-                            img(src="images/svg/icon-services2.svg", alt="") 
-                            .servicesList__title Вакцинация
-                            .servicesList__text Вакцинация  – эффективный способ предупреждения заболеваний инфекционного характера.
-                    .servicesList__item
-                        .servicesList__wrapp 
-                            img(src="images/svg/icon-services3.svg", alt="") 
-                            .servicesList__title Хирургия
-                            .servicesList__text Хирургические манипуляции любой сложности.
-                    .servicesList__item
-                        .servicesList__wrapp 
-                            img(src="images/svg/icon-services4.svg", alt="") 
-                            .servicesList__title Стоматология
-                            .servicesList__text Хирургические манипуляции любой сложности.
+            .servicesBlock__col 
+                .servicesBlock__services 
+                    .servicesList 
+                        div
+                            .servicesList__item
+                                .servicesList__wrapp 
+                                    img(src="images/svg/icon-services1.svg", alt="") 
+                                    .servicesList__title Терапия
+                                    .servicesList__text Осмотр, диагностика, лечение,консультации.
+                            .servicesList__item
+                                .servicesList__wrapp 
+                                    img(src="images/svg/icon-services2.svg", alt="") 
+                                    .servicesList__title Вакцинация
+                                    .servicesList__text Вакцинация  – эффективный способ предупреждения заболеваний инфекционного характера.
+                        div
+                            .servicesList__item
+                                .servicesList__wrapp 
+                                    img(src="images/svg/icon-services3.svg", alt="") 
+                                    .servicesList__title Хирургия
+                                    .servicesList__text Хирургические манипуляции любой сложности.
+                            .servicesList__item
+                                .servicesList__wrapp 
+                                    img(src="images/svg/icon-services4.svg", alt="") 
+                                    .servicesList__title Стоматология
+                                    .servicesList__text Хирургические манипуляции любой сложности.
 
-                .servicesList__arrow.arrowSlider 
-                    .arrowSlider__left 
-                        img(src="images/svg/arrow-prev.svg", alt="")
-                    .arrowSlider__right
-                        img(src="images/svg/arrow-next.svg", alt="")
+                    .servicesList__arrow.arrowSlider 
+                        .arrowSlider__left 
+                            img(src="images/svg/arrow-prev.png", alt="")
+                        .arrowSlider__right
+                            img(src="images/svg/arrow-next.png", alt="")
+                            
+    .descriptionBlock
+        .descriptionBlock__row 
+            .descriptionBlock__col
+                div 
+                    img(src="images/images/desck_dog.png", alt="")
+            .descriptionBlock__col
+                h2.descriptionBlock__title.titleBlock Ветеринарная клиника <br> “Усы лисы”
+                .descriptionBlock__text Ветеринарная клиника «Усы лисы» оказывает ветеринарную помощь домашним питомцам, а именно профилактическую (вакцинации, дегельминтизации), терапевтическую, хирургическую (от кастраций и стерилизаций до сложных хирургических вмешательств). И не только кошкам и собакам, но также и хомякам, крысам, шиншиллам, морским свинкам, кроликам, змеям, попугаям, канарейкам и диким птицам. В нашей ветклинике на современном уровне проводится УЗИ-диагностика, общеклинические, биохимические анализы, цитологические исследования. Также для оказания более качественной услуги по лечению животного вы можете оставить своего питомца в клинике на стационар.
+
+        .descriptionBlock__row 
+            .descriptionBlock__advantList 
+                .descriptionBlock__item 
+                    img(src="images/svg/icon-star.svg", alt="")
+                    .descriptionBlock__icon-text Есть ветеринарная аптека с большим ассортиментом препаратов
+                .descriptionBlock__item 
+                    img(src="images/svg/icon-star.svg", alt="")
+                    .descriptionBlock__icon-text Послеоперационный стационар
+                .descriptionBlock__item 
+                    img(src="images/svg/icon-star.svg", alt="")
+                    .descriptionBlock__icon-text Новое оборудование
+                .descriptionBlock__item 
+                    img(src="images/svg/icon-star.svg", alt="")
+                    .descriptionBlock__icon-text Широкий спектр предлагаемых услуг
+
+
+        .doctorsBlock
+            .doctorsBlock__row 
+                .doctorsBlock__col 
+                    h2.doctorsBlock__title.titleBlock Познакомьтесь с <br> нашими врачами
+                    .doctorsBlock__text Наши сотрудники досконально знают свое дело, увлечены своей профессией и постоянно совершенствуются.
+                    .doctorsBlock__btn.btnMain 
+                        a(href="#") Все врачи
+                .doctorsBlock__col.doctorsBlock__flip
+                    .flip
+                        div 
+                            .flip__item 
+                                img(src="images/images/doctor1.png", alt="")
+                                .flip__icon         
+                                    img(src="images/svg/icon-pow2", alt="")
+                            .flip__item 
+                                img(src="images/images/doctor2.png", alt="")
+                                .flip__icon         
+                                    img(src="images/svg/icon-pow2", alt="")
+                        div
+                            .flip__item 
+                                img(src="images/images/doctor4.png", alt="")
+                                .flip__icon         
+                                    img(src="images/svg/icon-pow2", alt="")
+                            .flip__item 
+                                img(src="images/images/doctor5.png", alt="")
+                                .flip__icon         
+                                    img(src="images/svg/icon-pow2", alt="")
+
+    .reviews 
+        .reviews__row 
+                .reviews__col 
+                    h2.reviews__title.titleBlock Узнайте,что говорят о нас
+
+                    .reviews__block 
+                        .reviews__list 
+                            .reviews__item
+                                .reviews__name Имя Фамилия
+                                .reviews__text Отличная вет. клиника. На рецепшене всегда приятные люди, особенно понравился врач Лизунова Ирина Николаевна: приятный и вежливый человек, который любит животных. После курса лечения, необходимо было отзвониться доктору и определить дальнейшие действия. Девушка по телефону сказала, что врач занята,
+                                .reviews__button 
+                                    a(href="#")  Продолжить чтение
+                                    img(src="images/svg/icon-arrow.svg", alt="")
+
+                                .reviews__btn.btnMain 
+                                    a(href="#") Все отзывы
+
+                
+
+
+
+
+
+
+
+
+
+
+
                         
-.descriptionBlock
-    .descriptionBlock__row 
-        .descriptionBlock__col 
-            img(src="images/images/desck_dog.png", alt="")
-        .descriptionBlock__col
-            h2.descriptionBlock__title.titleBlock Ветеринарная клиника <br> “Усы лисы”
-            .descriptionBlock__text Ветеринарная клиника «Усы лисы» оказывает ветеринарную помощь домашним питомцам, а именно профилактическую (вакцинации, дегельминтизации), терапевтическую, хирургическую (от кастраций и стерилизаций до сложных хирургических вмешательств). И не только кошкам и собакам, но также и хомякам, крысам, шиншиллам, морским свинкам, кроликам, змеям, попугаям, канарейкам и диким птицам. В нашей ветклинике на современном уровне проводится УЗИ-диагностика, общеклинические, биохимические анализы, цитологические исследования. Также для оказания более качественной услуги по лечению животного вы можете оставить своего питомца в клинике на стационар.
-
-    .descriptionBlock__row 
-        .descriptionBlock__advantList 
-            .descriptionBlock__item 
-                img(src="images/svg/icon-star.svg", alt="")
-                .descriptionBlock__text Есть ветеринарная аптека с большим ассортиментом препаратов
-            .descriptionBlock__item 
-                img(src="images/svg/icon-star.svg", alt="")
-                .descriptionBlock__text Послеоперационный стационар
-            .descriptionBlock__item 
-                img(src="images/svg/icon-star.svg", alt="")
-                .descriptionBlock__text Новое оборудование
-            .descriptionBlock__item 
-                img(src="images/svg/icon-star.svg", alt="")
-                .descriptionBlock__text Широкий спектр предлагаемых услуг
-
-
-    .doctorsBlock
-        .doctorsBlock__row 
-            .doctorsBlock__col 
-                h2.descriptionBlock__title.titleBlock Познакомьтесь с <br> нашими врачами
-                .descriptionBlock__text Наши сотрудники досконально знают свое дело, увлечены своей профессией и постоянно совершенствуются.
-                .descriptionBlock__btn.btnMain 
-                    a(href="#") Все врачи
-            .doctorsBlock__col.doctorsBlock__flip
-                .flip 
-                    .flip__item 
-                        img(src="images/images/doctor1.png", alt="")
-                        .flip__icon         
-                            img(src="images/svg/icon-pow2", alt="")
-                    .flip__item 
-                        img(src="images/images/doctor2.png", alt="")
-                        .flip__icon         
-                            img(src="images/svg/icon-pow2", alt="")
-                    .flip__item 
-                        img(src="images/images/doctor4.png", alt="")
-                        .flip__icon         
-                            img(src="images/svg/icon-pow2", alt="")
-                    .flip__item 
-                        img(src="images/images/doctor5.png", alt="")
-                        .flip__icon         
-                            img(src="images/svg/icon-pow2", alt="")
-
-.reviews 
-    .reviews__row 
-            .reviews__col 
-                h2.reviews__title.titleBlock Узнайте,что говорят о нас
-
-                .reviews__block 
-                    .reviews__list 
-                        .reviews__item
-                            .reviews__name Имя Фамилия
-                            .reviews__text Отличная вет. клиника. На рецепшене всегда приятные люди, особенно понравился врач Лизунова Ирина Николаевна: приятный и вежливый человек, который любит животных. После курса лечения, необходимо было отзвониться доктору и определить дальнейшие действия. Девушка по телефону сказала, что врач занята,
-                            .reviews__button 
-                                a(href="#")  Продолжить чтение
-                                img(src="images/svg/icon-arrow.svg", alt="")
-
-                            .reviews__btn.btnMain 
-                                a(href="#") Все отзывы
-
-            
 
 
 
-
-
-
-
-
-
-
-
-                    
-
-
-
-            
+                
 
 
 

@@ -1,6 +1,35 @@
+
+.headerBlock
+    wrapper()
+    position relative
+.header
+    position: absolute
 .navWrapper
+
     display flex
+    justify-content: space-between
+    align-items: center
 .nav
     display flex
+    margin-left: 30px
+    padding: 0
+    &__link
+        font-size 16px
+        font-family fontSecond-sb
+        text-transform uppercase
+        margin-right 28px
+    &__link:hover
+        color colorElem
 .nav-contact
     display flex
+    &__item
+        margin-right 30px
+        display flex
+        align-items: center
+
+.nav-contact__text 
+    font-size 18px
+    font-family fontSecond-sb
+    &-min
+        font-size 14px
+        font-family fontSecond-r 
