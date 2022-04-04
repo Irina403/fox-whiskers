@@ -1,9 +1,9 @@
-let x = document.getElementById("contain");
 
+var x = document.getElementById("contain");
 x.addEventListener("click", myFunction);
 
 function myFunction() {
-  let element = document.getElementById("nav");
+  var element = document.getElementById("nav");
   element.classList.toggle("open");
 
   x.classList.toggle("change");
