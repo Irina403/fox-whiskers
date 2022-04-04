@@ -34,7 +34,7 @@
         <div class="header">
             <div class="navContainer">
                 <div class="navWrapper">
-                    <div class="logo">
+                    <div class="logo logo-desck">
                         <a class="logo__brand" href="#">
                             <img src="images/svg/logo.svg" alt="">
                         </a>
@@ -46,8 +46,8 @@
                         </li>
                         <li class="nav__item"><a class="nav__link" href="#contacts">Специалисты</a>
                         </li>
-                        <li class="nav__item" id="nav-price"><a class="nav__link" href="price.html">Цены</a>
-                            <div class="priceWrapper">
+                        <li class="nav__item" id="nav-price"><a class="nav__link" href="price.html" id="nav__link-price">Цены</a>
+                            <div class="priceWrapper" id="priceWrapper">
                                 <div class="nav__link-submenu"> <a class="nav__link" href="#">Лабораторные исследования</a>
                                 </div>
                                 <div class="nav__link-submenu"><a class="nav__link" href="#">Стоимость лечения </a>
@@ -57,7 +57,7 @@
                         <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a>
                         </li>
                     </ul>
-                    <ul class="nav-contact">
+                    <ul class="nav-contact nav-contact-desck">
                         <li class="nav-contact__item">
                             <img src="images/svg/icon-map.svg" alt="">
                             <div>
@@ -82,11 +82,18 @@
                         </li>
                     </ul>
                 </div>
-                <div class="mobile-wrapp">
-                    <div id="contain">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
+                <div class="mobile-navigation">
+                    <div class="mobile-wrapp">
+                        <div class="logo">
+                            <a class="logo__brand" href="#">
+                                <img src="images/svg/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div id="contain">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
                     </div>
                     <ul id="nav">
                         <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#servicesBlock">Главная </a>
@@ -95,12 +102,42 @@
                         </li>
                         <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#stock">Специалисты</a>
                         </li>
-                        <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#stock">Цены</a>
+                        <li class="mobile-nav__item" id="mobile-nav__item"> <a class="mobile-nav__link" href="#stock">Цены</a>
+                            <img src="images/svg/price-arrow.svg" alt="">
                         </li>
+                        <div class="priceMobile" id="priceMobile">
+                            <div class="nav__link-submenu"> <a class="nav__link" href="#">Лабораторные исследования</a>
+                            </div>
+                            <div class="nav__link-submenu"><a class="nav__link" href="#">Стоимость лечения </a>
+                            </div>
+                        </div>
                         <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#stock">Контакты</a>
                         </li>
                     </ul>
-                    <ul class="nav-contact"></ul>
+                    <ul class="nav-contact nav-contact-mobile">
+                        <li class="nav-contact__item">
+                            <img src="images/svg/icon-map.svg" alt="">
+                            <div>
+                                <div class="nav-contact__text">Москва
+                                    <br>
+                                </div>
+                                <div class="nav-contact__text-min">Ленина 5</div>
+                            </div>
+                        </li>
+                        <li class="nav-contact__item">
+                            <img src="images/svg/icon-tel.svg" alt="">
+                            <div>
+                                <div class="nav-contact__text">Телефон</div><a class="nav-contact__text-min" href="tel:+79008888888">+7(900)888-88-88</a>
+                            </div>
+                        </li>
+                        <li class="nav-contact__item">
+                            <img src="images/svg/icon-clock.svg" alt="">
+                            <div>
+                                <div class="nav-contact__text">Режим работы</div>
+                                <div class="nav-contact__text-min">с 9:00 до 21:00</div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -1,3 +1,24 @@
+let x = document.getElementById("contain");
+
+x.addEventListener("click", myFunction);
+
+function myFunction() {
+  let element = document.getElementById("nav");
+  element.classList.toggle("open");
+
+  x.classList.toggle("change");
+};
+
+
+$( "#nav-price" ).hover(function(e) {
+  e.preventDefault();
+  $( "#priceWrapper" ).slideToggle();
+});
+
+$( "#mobile-nav__item" ).click(function(e) {
+  e.preventDefault();
+  $( "#priceMobile" ).slideToggle();
+});
 
   $(document).ready(function($) {
     $('.slider__content').slick({
@@ -45,4 +66,16 @@
         $(this).fadeOut();					
       }
     });
+  });
+
+  new jQueryCollapse($("#custom-show-hide-example"), {
+    open: function() {
+      this.slideDown(500);
+      // $('.pricePage__arrow').html('<img src="images/svg/arrow-up.svg", alt="";/>');
+    },
+    close: function() {
+      this.slideUp(500);
+      // $('.pricePage__arrow').html('<img src="images/svg/arrow-down.svg", alt="";/>');
+    }
+   
   });

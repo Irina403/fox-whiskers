@@ -1,66 +1,98 @@
 .headerBlock
   .header
     .navContainer 
-        .navWrapper 
+      .navWrapper 
+        .logo.logo-desck 
+          a.logo__brand(href="#")
+            img(src="images/svg/logo.svg", alt="")
+
+        ul.nav
+          li.nav__item
+            a(href="#aboutCompany").nav__link Главная 
+          li.nav__item
+            a(href="#services").nav__link Услуги
+          li.nav__item
+            a(href="#contacts").nav__link Специалисты
+          li.nav__item#nav-price
+            a(href="price.html").nav__link#nav__link-price Цены
+            .priceWrapper#priceWrapper
+              .nav__link-submenu 
+                a(href="#").nav__link Лабораторные исследования
+              .nav__link-submenu
+                a(href="#").nav__link Стоимость лечения 
+          li.nav__item
+            a(href="#contacts").nav__link Контакты
+        
+        ul.nav-contact.nav-contact-desck
+          li.nav-contact__item
+            img(src="images/svg/icon-map.svg", alt="")
+            div
+              .nav-contact__text Москва <br>
+              .nav-contact__text-min Ленина 5
+
+          li.nav-contact__item
+            img(src="images/svg/icon-tel.svg", alt="") 
+            div
+              .nav-contact__text Телефон
+              a(href="tel:+79008888888").nav-contact__text-min +7(900)888-88-88
+        
+          li.nav-contact__item
+            img(src="images/svg/icon-clock.svg", alt="") 
+            div
+              .nav-contact__text Режим работы
+              .nav-contact__text-min с 9:00 до 21:00
+
+
+
+
+        
+      .mobile-navigation
+        .mobile-wrapp
           .logo 
             a.logo__brand(href="#")
               img(src="images/svg/logo.svg", alt="")
-
-          ul.nav
-            li.nav__item
-              a(href="#aboutCompany").nav__link Главная 
-            li.nav__item
-              a(href="#services").nav__link Услуги
-            li.nav__item
-              a(href="#contacts").nav__link Специалисты
-            li.nav__item#nav-price
-              a(href="price.html").nav__link Цены
-              .priceWrapper
-                .nav__link-submenu 
-                  a(href="#").nav__link Лабораторные исследования
-                .nav__link-submenu
-                  a(href="#").nav__link Стоимость лечения 
-            li.nav__item
-              a(href="#contacts").nav__link Контакты
-          
-          ul.nav-contact
-            li.nav-contact__item
-              img(src="images/svg/icon-map.svg", alt="")
-              div
-                .nav-contact__text Москва <br>
-                .nav-contact__text-min Ленина 5
-
-            li.nav-contact__item
-              img(src="images/svg/icon-tel.svg", alt="") 
-              div
-                .nav-contact__text Телефон
-                a(href="tel:+79008888888").nav-contact__text-min +7(900)888-88-88
-          
-            li.nav-contact__item
-              img(src="images/svg/icon-clock.svg", alt="") 
-              div
-                .nav-contact__text Режим работы
-                .nav-contact__text-min с 9:00 до 21:00
-
-
-        .mobile-wrapp
           #contain 
             .bar1 
             .bar2 
             .bar3
 
-          ul#nav
-            li.mobile-nav__item 
-              a(href="#servicesBlock").mobile-nav__link Главная 
-            li.mobile-nav__item 
-              a(href="#stepWork").mobile-nav__link Услуги
-            li.mobile-nav__item 
-              a(href="#stock").mobile-nav__link Специалисты
-            li.mobile-nav__item 
-              a(href="#stock").mobile-nav__link Цены
-            li.mobile-nav__item 
-              a(href="#stock").mobile-nav__link Контакты
-          
-          ul.nav-contact
+        ul#nav
+          li.mobile-nav__item 
+            a(href="#servicesBlock").mobile-nav__link Главная 
+          li.mobile-nav__item 
+            a(href="#stepWork").mobile-nav__link Услуги
+          li.mobile-nav__item 
+            a(href="#stock").mobile-nav__link Специалисты
+          li.mobile-nav__item#mobile-nav__item 
+            a(href="#stock").mobile-nav__link Цены
+            img(src="images/svg/price-arrow.svg", alt="")
+
+          .priceMobile#priceMobile
+            .nav__link-submenu 
+              a(href="#").nav__link Лабораторные исследования
+            .nav__link-submenu
+              a(href="#").nav__link Стоимость лечения 
+
+          li.mobile-nav__item 
+            a(href="#stock").mobile-nav__link Контакты
+        
+        ul.nav-contact.nav-contact-mobile
+          li.nav-contact__item
+            img(src="images/svg/icon-map.svg", alt="")
+            div
+              .nav-contact__text Москва <br>
+              .nav-contact__text-min Ленина 5
+
+          li.nav-contact__item
+            img(src="images/svg/icon-tel.svg", alt="") 
+            div
+              .nav-contact__text Телефон
+              a(href="tel:+79008888888").nav-contact__text-min +7(900)888-88-88
+        
+          li.nav-contact__item
+            img(src="images/svg/icon-clock.svg", alt="") 
+            div
+              .nav-contact__text Режим работы
+              .nav-contact__text-min с 9:00 до 21:00
 
 

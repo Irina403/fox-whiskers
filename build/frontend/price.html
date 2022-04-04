@@ -34,7 +34,7 @@
         <div class="header">
             <div class="navContainer">
                 <div class="navWrapper">
-                    <div class="logo">
+                    <div class="logo logo-desck">
                         <a class="logo__brand" href="#">
                             <img src="images/svg/logo.svg" alt="">
                         </a>
@@ -46,8 +46,8 @@
                         </li>
                         <li class="nav__item"><a class="nav__link" href="#contacts">Специалисты</a>
                         </li>
-                        <li class="nav__item" id="nav-price"><a class="nav__link" href="price.html">Цены</a>
-                            <div class="priceWrapper">
+                        <li class="nav__item" id="nav-price"><a class="nav__link" href="price.html" id="nav__link-price">Цены</a>
+                            <div class="priceWrapper" id="priceWrapper">
                                 <div class="nav__link-submenu"> <a class="nav__link" href="#">Лабораторные исследования</a>
                                 </div>
                                 <div class="nav__link-submenu"><a class="nav__link" href="#">Стоимость лечения </a>
@@ -57,7 +57,7 @@
                         <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a>
                         </li>
                     </ul>
-                    <ul class="nav-contact">
+                    <ul class="nav-contact nav-contact-desck">
                         <li class="nav-contact__item">
                             <img src="images/svg/icon-map.svg" alt="">
                             <div>
@@ -82,11 +82,18 @@
                         </li>
                     </ul>
                 </div>
-                <div class="mobile-wrapp">
-                    <div id="contain">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
+                <div class="mobile-navigation">
+                    <div class="mobile-wrapp">
+                        <div class="logo">
+                            <a class="logo__brand" href="#">
+                                <img src="images/svg/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div id="contain">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
                     </div>
                     <ul id="nav">
                         <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#servicesBlock">Главная </a>
@@ -95,39 +102,175 @@
                         </li>
                         <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#stock">Специалисты</a>
                         </li>
-                        <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#stock">Цены</a>
+                        <li class="mobile-nav__item" id="mobile-nav__item"> <a class="mobile-nav__link" href="#stock">Цены</a>
+                            <img src="images/svg/price-arrow.svg" alt="">
                         </li>
+                        <div class="priceMobile" id="priceMobile">
+                            <div class="nav__link-submenu"> <a class="nav__link" href="#">Лабораторные исследования</a>
+                            </div>
+                            <div class="nav__link-submenu"><a class="nav__link" href="#">Стоимость лечения </a>
+                            </div>
+                        </div>
                         <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#stock">Контакты</a>
                         </li>
                     </ul>
-                    <ul class="nav-contact"></ul>
+                    <ul class="nav-contact nav-contact-mobile">
+                        <li class="nav-contact__item">
+                            <img src="images/svg/icon-map.svg" alt="">
+                            <div>
+                                <div class="nav-contact__text">Москва
+                                    <br>
+                                </div>
+                                <div class="nav-contact__text-min">Ленина 5</div>
+                            </div>
+                        </li>
+                        <li class="nav-contact__item">
+                            <img src="images/svg/icon-tel.svg" alt="">
+                            <div>
+                                <div class="nav-contact__text">Телефон</div><a class="nav-contact__text-min" href="tel:+79008888888">+7(900)888-88-88</a>
+                            </div>
+                        </li>
+                        <li class="nav-contact__item">
+                            <img src="images/svg/icon-clock.svg" alt="">
+                            <div>
+                                <div class="nav-contact__text">Режим работы</div>
+                                <div class="nav-contact__text-min">с 9:00 до 21:00</div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="wrapper">
-        <div class="nav-page-header"> <a href="#">Главная  /</a><a href="#"> Цены  /</a><a href="#"> Стоимость лечения   </a>
+        <div class="nav-page-header"> <a href="index.html">Главная  /</a><a href="#"> Цены  /</a><a href="#"> Стоимость лечения   </a>
         </div>
         <div class="pricePage">
             <h1 class="col-left__title"><span>Cтоимость</span> лечения</h1>
         </div>
-        <div class="pricePage__list">
+        <div class="pricePage__list" id="custom-show-hide-example">
             <div class="pricePage__item">
-                <div class="pricePage__text">АМБУЛАТОРНЫЙ ПРИЕМ</div>
-                <div class="pricePage__arrow">
-                    <img src="images/svg/arrow-down.svg" alt="">
+                <div>
+                    <div class="pricePage__text">АМБУЛАТОРНЫЙ ПРИЕМ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="collapsePrice__price">2000 Р</div>
                 </div>
             </div>
             <div class="pricePage__item">
-                <div class="pricePage__text">ВИЗУАЛЬНАЯ ДИАГНОСТИКА</div>
-                <div class="pricePage__arrow">
-                    <img src="images/svg/arrow-down.svg" alt="">
+                <div>
+                    <div class="pricePage__text">ТЕРАПИЯ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="collapsePrice__price">2000 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">АНЕСТЕЗИЯ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="collapsePrice__price">2000 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ХИРУРГИЯ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="collapsePrice__price">2000 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ВИЗУАЛЬНАЯ ДИАГНОСТИКА</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
                 </div>
             </div>
             <div class="pricePage__collapse collapsePrice">
                 <div class="collapsePrice__item">
                     <div class="collapsePrice__text">ЭхоКГ (с допплерографией)</div>
                     <div class="collapsePrice__price">2000 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">ЭхоКГ скрининг</div>
+                    <div class="collapsePrice__price">1000 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Электрокардиография</div>
+                    <div class="collapsePrice__price">1000 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Кардиологическое обследование (прием
+                        <br>врача кардиолога, ЭхоКГ, ЭКГ, Тонометрия)</div>
+                    <div class="collapsePrice__price">4000 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест Ширмера</div>
+                    <div class="collapsePrice__price">500 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Флюоресциновый тест/Тест Джонса</div>
+                    <div class="collapsePrice__price">300 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Офтальмоскопия</div>
+                    <div class="collapsePrice__price">1000 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">УЗИ органов брюшной полости</div>
+                    <div class="collapsePrice__price">2000 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Повторное УЗИ органов брюшной полости
+                        <br>(контроль динамики заболевания)</div>
+                    <div class="collapsePrice__price">1000 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">УЗИ одного органа/системы</div>
+                    <div class="collapsePrice__price">1000 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Рентгенографическое исследование
+                        <br>(запись на диск/флэшку)</div>
+                    <div class="collapsePrice__price">1400 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Рентгенографическое исследование грудной
+                        <br>полости (3 проекции, запись на диск/флэш</div>
+                    <div class="collapsePrice__price">3000 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Рентгеноконтрастное исследование ЖКТ с бариевой смесью
+                        <br>(включает в стоимость сульфата бария, его п/о введение,
+                        <br>серию рентгеновских снимков)</div>
+                    <div class="collapsePrice__price">5000 Р</div>
                 </div>
             </div>
         </div>
@@ -198,6 +341,7 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.collapse.js"></script>
     <script src="js/main.js"></script>
 </body>
 

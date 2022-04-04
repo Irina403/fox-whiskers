@@ -1,27 +1,116 @@
 .wrapper
     .nav-page-header 
-        a(href="#") Главная  /
+        a(href="index.html") Главная  /
         a(href="#")  Цены  /
         a(href="#")  Стоимость лечения   
     
     .pricePage
         h1.col-left__title <span>Cтоимость</span> лечения
 
-    .pricePage__list 
+    .pricePage__list#custom-show-hide-example 
         .pricePage__item
-            .pricePage__text АМБУЛАТОРНЫЙ ПРИЕМ
-            .pricePage__arrow  
-                img(src="images/svg/arrow-down.svg", alt="")
+            div
+                .pricePage__text АМБУЛАТОРНЫЙ ПРИЕМ
+                .pricePage__arrow  
+                    img(src="images/svg/arrow-down.svg", alt="")
+
+        .pricePage__collapse.collapsePrice  
+            .collapsePrice__item 
+                .collapsePrice__text Тест
+                .collapsePrice__price 2000 Р
         
         .pricePage__item
-            .pricePage__text ВИЗУАЛЬНАЯ ДИАГНОСТИКА
-            .pricePage__arrow  
-                img(src="images/svg/arrow-down.svg", alt="")
+            div
+                .pricePage__text ТЕРАПИЯ
+                .pricePage__arrow  
+                    img(src="images/svg/arrow-down.svg", alt="")
+
+        .pricePage__collapse.collapsePrice  
+            .collapsePrice__item 
+                .collapsePrice__text Тест
+                .collapsePrice__price 2000 Р
+
+        .pricePage__item
+            div
+                .pricePage__text АНЕСТЕЗИЯ
+                .pricePage__arrow  
+                    img(src="images/svg/arrow-down.svg", alt="")
+
+        .pricePage__collapse.collapsePrice  
+            .collapsePrice__item 
+                .collapsePrice__text Тест
+                .collapsePrice__price 2000 Р
+        
+        .pricePage__item
+            div
+                .pricePage__text ХИРУРГИЯ
+                .pricePage__arrow  
+                    img(src="images/svg/arrow-down.svg", alt="")
+
+        .pricePage__collapse.collapsePrice  
+            .collapsePrice__item 
+                .collapsePrice__text Тест
+                .collapsePrice__price 2000 Р
+
+        
+        .pricePage__item
+            div
+                .pricePage__text ВИЗУАЛЬНАЯ ДИАГНОСТИКА
+                .pricePage__arrow  
+                    img(src="images/svg/arrow-down.svg", alt="")
 
         .pricePage__collapse.collapsePrice 
             .collapsePrice__item 
                 .collapsePrice__text ЭхоКГ (с допплерографией)
                 .collapsePrice__price 2000 Р
+
+            .collapsePrice__item 
+                .collapsePrice__text ЭхоКГ скрининг
+                .collapsePrice__price 1000 Р
+            
+            .collapsePrice__item 
+                .collapsePrice__text Электрокардиография
+                .collapsePrice__price 1000 Р
+            
+            .collapsePrice__item 
+                .collapsePrice__text Кардиологическое обследование (прием <br> врача кардиолога, ЭхоКГ, ЭКГ, Тонометрия)
+                .collapsePrice__price 4000 Р
+            
+            .collapsePrice__item 
+                .collapsePrice__text Тест Ширмера
+                .collapsePrice__price 500 Р
+            
+            .collapsePrice__item 
+                .collapsePrice__text Флюоресциновый тест/Тест Джонса
+                .collapsePrice__price 300 Р
+            
+            .collapsePrice__item 
+                .collapsePrice__text Офтальмоскопия
+                .collapsePrice__price 1000 Р
+
+            .collapsePrice__item 
+                .collapsePrice__text УЗИ органов брюшной полости
+                .collapsePrice__price 2000 Р
+            
+            .collapsePrice__item 
+                .collapsePrice__text Повторное УЗИ органов брюшной полости <br> (контроль динамики заболевания)
+                .collapsePrice__price 1000 Р
+
+            .collapsePrice__item 
+                .collapsePrice__text УЗИ одного органа/системы
+                .collapsePrice__price 1000 Р
+            
+            .collapsePrice__item 
+                .collapsePrice__text Рентгенографическое исследование <br> (запись на диск/флэшку)
+                .collapsePrice__price 1400 Р
+            
+            .collapsePrice__item 
+                .collapsePrice__text Рентгенографическое исследование грудной <br> полости (3  проекции, запись на диск/флэш
+                .collapsePrice__price 3000 Р
+            
+            .collapsePrice__item 
+                .collapsePrice__text Рентгеноконтрастное исследование ЖКТ с бариевой смесью <br> (включает в стоимость сульфата бария, его п/о введение, <br> серию рентгеновских снимков)
+                .collapsePrice__price 5000 Р
 
 
 

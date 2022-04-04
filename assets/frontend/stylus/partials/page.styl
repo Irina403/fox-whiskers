@@ -336,6 +336,7 @@ html *
     &__list
         margin-top 5%
     &__item
+        position relative
         margin-top 27px
         width 100%
         border: 1px solid #E1E1E1
@@ -351,8 +352,13 @@ html *
     &__text
         font-size fonth2
         font-family fontSecond-sb
+    &__arrow
+        position: absolute
+        right 30px
 .collapsePrice
     &__item 
+        justify-content: space-between
+        width 100%
         padding-bottom 27px
         margin-top 67px
         padding-left 40px
@@ -362,11 +368,13 @@ html *
         font-family fontSecond-sb
         font-size 18px
         align-items: center
-        justify-content: space-between
         border-bottom 1px solid #E1E1E1
         cursor pointer
-    
     &__price
         font-size 40px
         color colorElem
         font-family fontSecond-b
+
+.pricePage__item div
+    display flex
+    justify-content: space-between
