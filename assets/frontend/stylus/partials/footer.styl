@@ -5,6 +5,7 @@
     border-radius: 180px 180px 0px 0px
     font-family fontSecond-r 
     color fontColor
+    sm(border-radius, 80px 80px 0px 0px)
     &__row 
         position relative
         wrapper()
@@ -12,13 +13,18 @@
         justify-content: space-between
         padding-top 45px
         sm(flex-wrap, wrap)
+        sm(padding-top, 0px)
     &__col
         width 50%
+        sm(margin-top, 50px)
+        sm(width, 100%)
+        sm(text-align, center)
     &__wrapp
         display flex
         width 100%
         margin-left 10%
         sm(flex-wrap, wrap)
+        sm(margin-left, 0%)
     &__text
         margin-top 25px
         font-size 16px
@@ -31,7 +37,9 @@
         font-size 16px
         color fontColor
         font-family fontSecond-r 
-
+.footer__logo img
+    sm(width, 50%)
+    sm(margin, 0 auto)
 .contactsBlock
     font-size 24px
     color colorElem 
@@ -44,6 +52,10 @@
 .socialIcon 
     display flex
     position: absolute;
-    bottom: 0px;
+    align-items: center
+    bottom: 0
+    sm(left, 50%)
+    sm(bottom,-50px)
+    sm(transform, translate(-50%, 0))
     &__icon
         margin-right 25px

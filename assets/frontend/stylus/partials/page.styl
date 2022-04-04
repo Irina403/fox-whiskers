@@ -6,9 +6,11 @@ html *
     background-repeat: no-repeat
     padding-bottom 3%
     background-size: cover
-    sm(background-image, none)
+    overflow-x: hidden
+    margin-top -10px
     sm(background-color, #F0FAFF)
     sm(height, 100vh)
+
     &__row
         wrapper()
         padding-top 13%
@@ -104,7 +106,7 @@ html *
     wrapper()
 
 .servicesBlock
-    sm(margin-top, 125%)
+    sm(margin-top, 20%)
     &__row
         width 100%
         display flex
@@ -154,6 +156,7 @@ html *
         height 380px
         box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
         border-radius: 40px;
+        sm(max-width, 100%)
 
     &__title
         font-size 24px
@@ -180,6 +183,20 @@ html *
         border: 1px solid #F2F2F2
         border-radius: 15px
         margin-right 20px
+        cursor pointer
+.arrowSlder__wrapp-prev:after
+    display flex
+    align-items: center
+    justify-content: center
+    height 100%
+    content: url(../images/svg/arrow-prev.svg)
+.arrowSlder__wrapp-next:after
+    display flex
+    align-items: center
+    justify-content: center
+    height 100%
+    content: url(../images/svg/arrow-next.svg)
+
 
 .descriptionBlock
     &__row
@@ -187,12 +204,14 @@ html *
         display flex
         align-items: center
         sm(display, block)
+        sm(margin-top, 2em)
     &__text
         margin-top 100px
         font-size 18px
         color fontColor
         font-family fontSecond-r
         line-height: 160%;
+        sm(margin-top, 20px)
     &__icon-text
         font-size 18px
         color fontColor
@@ -201,6 +220,7 @@ html *
     &__col
         width 50%
         sm(width, 100%)
+        sm(margin-top, 2em)
     &__title:before
         content: url(../images/images/backForm_blue.png)
         position: absolute
@@ -213,12 +233,12 @@ html *
         justify-content: space-between
         sm(display, block)
     &__item
-        // max-width: 300px
         width 300px
         margin-right 10px
         margin-left 10px
         display flex
         align-items: flex-start
+        sm(margin-top, 30px)
         // justify-content:space-between
     &__item img
         margin-right 10px
@@ -246,17 +266,21 @@ html *
         sm(width, 100%)
     &__btn
         margin-top 15%
-
-
+        sm(margin-top, 10%)
 
 .flip
     display flex
+    sm(margin-top, 5em)
+    sm(display, block)
     &__item 
         margin-left 10%
         margin-bottom 10%
-
+        sm(margin-left, 0%)
+    &__item img
+        width 100%
 
 .reviews
+    margin-top 5em
     &__title
         display flex
         align-items: center
@@ -277,9 +301,9 @@ html *
         padding 20px 40px
         box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
         border-radius: 40px;
-        // margin-right 70px
         width 48%
         sm(width, 100%)
+        sm(margin-top, 10%)
     &__name
         margin-bottom 15px
         font-family fontSecond-sb
@@ -299,4 +323,50 @@ html *
         margin-left 10px
     &__btn
        margin-top 7%
-
+       sm(margin-top, 10%)
+.nav-page-header
+    margin-top 5%
+.nav-page-header a
+    font-size 14px
+    font-family fontSecond-r
+.col-left__title span
+    color colorElem 
+.pricePage
+    margin-top 75px
+    &__list
+        margin-top 5%
+    &__item
+        margin-top 27px
+        width 100%
+        border: 1px solid #E1E1E1
+        border-radius: 10px
+        height 110px
+        display flex
+        display flex
+        align-items: center
+        justify-content: space-between
+        padding-left 40px
+        padding-right 40px
+        cursor pointer
+    &__text
+        font-size fonth2
+        font-family fontSecond-sb
+.collapsePrice
+    &__item 
+        padding-bottom 27px
+        margin-top 67px
+        padding-left 40px
+        padding-right 40px
+        display flex
+        color fontColor
+        font-family fontSecond-sb
+        font-size 18px
+        align-items: center
+        justify-content: space-between
+        border-bottom 1px solid #E1E1E1
+        cursor pointer
+    
+    &__price
+        font-size 40px
+        color colorElem
+        font-family fontSecond-b
