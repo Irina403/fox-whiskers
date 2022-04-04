@@ -99,9 +99,10 @@ html *
     width 30%
 .titleBlock 
     font-size 40px
-    font-family fontSecond-b
+    font-family fontSecond-sb
     line-height: 46px;
     letter-spacing: 0.035em;
+    color #202020
 
 .textBlock
     font-size 18px
@@ -170,10 +171,13 @@ html *
         display flex
         justify-content: space-between
     &__item
+        // max-width: 300px
+        width 300px
         margin-right 10px
+        margin-left 10px
         display flex
-        align-items: center
-        justify-content:space-between
+        align-items: flex-start
+        // justify-content:space-between
     &__item img
         margin-right 10px
 
@@ -203,3 +207,18 @@ html *
 
 .flip
     display flex
+    &__item 
+        margin-left 10%
+        margin-bottom 10%
+
+
+.reviews
+    &__title:before
+        content: url(../images/images/backForm_blue.png)
+        position: absolute
+        z-index -1
+        margin-left -20px
+        display flex
+        align-items: center
+    &__list 
+        display flex
