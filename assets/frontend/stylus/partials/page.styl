@@ -139,6 +139,12 @@ html *
 .arrowSlider
     display flex
     align-items: center
+    &__wrapp
+        width 82px
+        height 58px
+        border: 1px solid #F2F2F2
+        border-radius: 15px
+        margin-right 20px
 
 .descriptionBlock
     &__row
@@ -213,6 +219,9 @@ html *
 
 
 .reviews
+    &__title
+        display flex
+        align-items: center
     &__title:before
         content: url(../images/images/backForm_blue.png)
         position: absolute
@@ -221,4 +230,33 @@ html *
         display flex
         align-items: center
     &__list 
+        width 100%
+        margin-top 10%
         display flex
+        justify-content: space-between
+    &__item
+        padding 20px 40px
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+        border-radius: 40px;
+        // margin-right 70px
+        width 48%
+    &__name
+        margin-bottom 15px
+        font-family fontSecond-sb
+        font-size 24px
+        color colorElem
+    &__text
+        margin-bottom 35px
+        font-family fontSecond-r 
+        font-size 16px
+        line-height: 127.22%;
+        color fontColor
+    &__button
+        display flex
+        font-family fontSecond-sb
+        align-items: center
+     &__button img
+        margin-left 10px
+    &__btn
+       margin-top 7%
+

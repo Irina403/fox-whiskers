@@ -20,7 +20,7 @@
     <meta property="og:url" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
-    <title>Нескучный сад</title>
+    <title>Усы лисы</title>
     <link rel="canonical" href="">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
@@ -172,12 +172,8 @@
                             </div>
                         </div>
                         <div class="servicesList__arrow arrowSlider">
-                            <div class="arrowSlider__left">
-                                <img src="images/svg/arrow-prev.png" alt="">
-                            </div>
-                            <div class="arrowSlider__right">
-                                <img src="images/svg/arrow-next.png" alt="">
-                            </div>
+                            <div class="arrowSlider__wrapp arrowSlder__wrapp-prev"></div>
+                            <div class="arrowSlider__wrapp arrowSlder__wrapp-next"></div>
                         </div>
                     </div>
                 </div>
@@ -264,7 +260,7 @@
         <div class="reviews">
             <div class="reviews__row">
                 <div class="reviews__col">
-                    <h2 class="reviews__title titleBlock">Узнайте,что говорят о нас</h2>
+                    <h2 class="reviews__title titleBlock">Узнайте, <br> что говорят о нас</h2>
                     <div class="reviews__block">
                         <div class="reviews__list">
                             <div class="reviews__item">
@@ -272,7 +268,7 @@
                                 <div class="reviews__text">Отличная вет. клиника. На рецепшене всегда приятные люди, особенно понравился врач Лизунова Ирина Николаевна: приятный и вежливый человек, который любит животных. После курса лечения, необходимо было отзвониться доктору
                                     и определить дальнейшие действия. Девушка по телефону сказала, что врач занята,</div>
                                 <div class="reviews__button"> <a href="#"> Продолжить чтение</a>
-                                    <img src="images/svg/icon-arrow.svg" alt="">
+                                    <img src="images/svg/arrow.svg" alt="">
                                 </div>
                             </div>
                             <div class="reviews__item">
@@ -280,11 +276,11 @@
                                 <div class="reviews__text">Отличная вет. клиника. На рецепшене всегда приятные люди, особенно понравился врач Лизунова Ирина Николаевна: приятный и вежливый человек, который любит животных. После курса лечения, необходимо было отзвониться доктору
                                     и определить дальнейшие действия. Девушка по телефону сказала, что врач занята,</div>
                                 <div class="reviews__button"> <a href="#"> Продолжить чтение</a>
-                                    <img src="images/svg/icon-arrow.svg" alt="">
-                                </div>
-                                <div class="reviews__btn btnMain"> <a href="#">Все отзывы</a>
+                                    <img src="images/svg/arrow.svg" alt="">
                                 </div>
                             </div>
+                        </div>
+                        <div class="reviews__btn btnMain"> <a href="#">Все отзывы</a>
                         </div>
                     </div>
                 </div>
@@ -299,36 +295,56 @@
                 </div>
                 <div class="footer__text">Множество людей доверяют нам заботу о своих подопечных, потому, что мы - профессионалы своего дела и ответственно относимся к жизни Ваших любимцев.</div>
             </div>
-            <div class="footer__col">
-                <ul class="footer__nav-name">Услуги</ul>
-                <li class="footer__nav-item">Терапия</li>
-                <li class="footer__nav-item">Вызов доктора</li>
-                <li class="footer__nav-item">Стационар</li>
-                <li class="footer__nav-item">Дерматология</li>
-                <li class="footer__nav-item">Диагностика</li>
-            </div>
-            <div class="footer__col">
-                <ul class="footer__nav-name">Компания</ul>
-                <li class="footer__nav-item">Специалисты</li>
-                <li class="footer__nav-item">Отзывы</li>
-                <li class="footer__nav-item">Акции</li>
-                <li class="footer__nav-item">Контакты</li>
-            </div>
-            <div class="footer__col">
-                <div class="footer__contacts contactsBlock">Контакты</div>
-                <div class="contactsBlock__cont">Наш адрес</div>
-                <div class="contactsBlock__cont-text">г. Казань, просп. Победы, 39</div>
-                <div class="contactsBlock__cont">Наша почта</div>
-                <div class="contactsBlock__cont-text">info-test@gmail.com</div>
-                <div class="contactsBlock__social socialIcon"></div>
-                <div class="socialIcon__icon">
-                    <img src="images/svg/icon-inst.svg" alt="">
+            <div class="footer__wrapp">
+                <div class="footer__col">
+                    <ul class="footer__nav-name">Услуги
+                        <li class="footer__nav-item"> <a href="#">Терапия</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Вызов доктора</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Стационар</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Дерматология</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Диагностика</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="socialIcon__icon">
-                    <img src="images/svg/icon-whats.svg" alt="">
+                <div class="footer__col">
+                    <ul class="footer__nav-name">Компания
+                        <li class="footer__nav-item"> <a href="#">Специалисты</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Отзывы</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Акции</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="socialIcon__icon">
-                    <img src="images/svg/icon-vk.svg" alt="">
+                <div class="footer__col">
+                    <div class="footer__contacts contactsBlock">Контакты</div>
+                    <div class="contactsBlock__cont">Наш адрес</div>
+                    <div class="contactsBlock__cont-text">г. Казань, просп. Победы, 39</div>
+                    <div class="contactsBlock__cont">Наша почта</div>
+                    <div class="contactsBlock__cont-text">info-test@gmail.com</div>
+                    <div class="contactsBlock__social socialIcon">
+                        <div class="socialIcon__icon">
+                            <a href="#">
+                                <img src="images/svg/icon-inst.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="socialIcon__icon">
+                            <a href="#">
+                                <img src="images/svg/icon_whatsapp.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="socialIcon__icon">
+                            <a href="#">
+                                <img src="images/svg/icon-vk.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
