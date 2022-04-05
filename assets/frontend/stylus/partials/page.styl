@@ -1,7 +1,9 @@
 html *
-   font-family: fonth1 
+    font-family: fonth1 
+    // overflow-x: hidden
 
 .mainScreen
+    width 100%
     background-image: url(../images/images/background-image.png)
     background-repeat: no-repeat
     padding-bottom 3%
@@ -10,7 +12,6 @@ html *
     margin-top -10px
     sm(background-color, #F0FAFF)
     sm(height, 100vh)
-
     &__row
         wrapper()
         padding-top 13%
@@ -23,22 +24,12 @@ html *
         position relative
         width 50%
         sm(width, 100%)
-    // &__imageAnimals
-    //     display flex
-    //     align-items: center
-    //     justify-content: center
-    //     width 100%
-    //     height 500px
-    //     display block
-    //     background-image: url(../images/images/dogsCats.png)
-    //     background-repeat: no-repeat
 .mainScreen:after 
     margin-top -10%  
     display flex
     justify-content: center
     content: url(../images/images/dogsCats.png)
     sm(margin-top, 0%)
-    // sm(display, none)
 
 .col-left
     &__title
@@ -46,7 +37,7 @@ html *
         font-family fontSecond-sb
         line-height: 90.22%;
         letter-spacing: 0.02em;
-        sm(font-size,44px !important)
+        sm(font-size,40px !important)
     &__text
         sm(margin-bottom, 50px)
         margin-top 22px
@@ -143,8 +134,6 @@ html *
     font-size 18px
     font-family fontSecond-r
     line-height: 160%;
-
-
 .servicesList
     display flex
     sm(display, block)
@@ -213,10 +202,10 @@ html *
         line-height: 160%;
         sm(margin-top, 20px)
     &__icon-text
-        font-size 18px
+        font-size 16px
         color fontColor
         font-family fontSecond-r
-        line-height: 160%;
+        line-height: 140%;
     &__col
         width 50%
         sm(width, 100%)
@@ -233,9 +222,9 @@ html *
         justify-content: space-between
         sm(display, block)
     &__item
-        width 300px
-        margin-right 10px
-        margin-left 10px
+        width 280px
+        margin-right 5px
+        margin-left 5px
         display flex
         align-items: flex-start
         sm(margin-top, 30px)
@@ -243,6 +232,9 @@ html *
     &__item img
         margin-right 10px
 
+.descriptionBlock__advantList
+    display flex
+    justify-content: space-between
 .doctorsBlock
     margin-top 8em
     &__row 
@@ -349,18 +341,36 @@ html *
         padding-left 40px
         padding-right 40px
         cursor pointer
+        sm(padding-left, 10px)
+        sm(padding-right, 10px)
     &__text
         font-size fonth2
         font-family fontSecond-sb
     &__arrow
         position: absolute
         right 30px
+        sm(right, 10px)
+    &__item div
+        display flex
+        align-items: center
+    &__col 
+        font-size 18px
+        color #565656
+        font-family fontSecond-sb
+        margin-right -95%
+    &__title
+        margin-top 70px
+
+
 .collapsePrice
+    margin-top 50px
+    sm(margin-top, 0px)
     &__item 
         justify-content: space-between
         width 100%
-        padding-bottom 27px
-        margin-top 67px
+        min-height 86px
+        // padding-bottom 27px
+        // margin-top 55px
         padding-left 40px
         padding-right 40px
         display flex
@@ -370,11 +380,77 @@ html *
         align-items: center
         border-bottom 1px solid #E1E1E1
         cursor pointer
+        sm(flex-direction, column)
+        sm(padding-right, 15px)
+        sm(padding-left,15px)
+        sm(align-items, flex-start)
+        sm(margin-top, 20px)
+        sm(padding-bottom, 20px)
     &__price
         font-size 40px
         color colorElem
         font-family fontSecond-b
-
+        sm(margin-top, 10px)
+        sm(font-size, 28px)
+    &__text
+        width 50%
+        sm(width, 100%)
+.titlelaboratory__item-style
+    width 40%
 .pricePage__item div
     display flex
     justify-content: space-between
+.pricePage__titleCollapse
+    margin-top 50px
+    padding-left 40px
+    font-size fonth2
+    color colorElem
+    font-family fontSecond-sb
+    sm(padding-left,15px)
+    sm(margin-top, 25px)
+
+.titlelaboratory
+    display flex
+    justify-content: space-between
+    padding-left 30px
+    padding-right 30px
+    sm(display, none)
+    &__item
+        font-family fontSecond-b 
+        font-size 20px
+
+.pricePage__col-testTable
+    sm(margin-top, 10px)
+
+.col-left-titleStyle 
+    margin-top 95px
+.professionals
+    margin-top 43px
+    &__tab
+        display flex
+    &__btn
+        font-size 16px
+        font-family fontSecond-sb
+        margin-right 50px
+
+
+.card_doctor
+    &__row
+        display flex
+    &__specialty
+        font-size 18px
+        font-family fontSecond-r
+    &__fio 
+        font-size fontTitleBlock
+        font-family fontSecond-sb
+    &__fio span
+        color colorElem
+    &__title
+        font-size 24px
+        font-family fontSecond-b
+    &__desck
+        font-size 18px
+        font-family fontSecond-r
+
+
+

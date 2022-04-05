@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="cleartype" content="on">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="https://arkada-web.ru">
+    <meta name="copyright" content="https://arkada-web.ru">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <title>Усы лисы</title>
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="headerBlock">
+        <div class="header">
+            <div class="navContainer">
+                <div class="navWrapper">
+                    <div class="logo logo-desck">
+                        <a class="logo__brand" href="#">
+                            <img src="images/svg/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav__item"><a class="nav__link" href="index.html">Главная </a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#services">Услуги</a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="professionals.html">Специалисты</a>
+                        </li>
+                        <li class="nav__item" id="nav-price"><a class="nav__link" href="#" id="nav__link-price">Цены</a>
+                            <div class="priceWrapper" id="priceWrapper">
+                                <div class="nav__link-submenu"> <a class="nav__link" href="laboratory-price.html">Лабораторные исследования</a>
+                                </div>
+                                <div class="nav__link-submenu"><a class="nav__link" href="price.html">Стоимость лечения </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-contact nav-contact-desck">
+                        <li class="nav-contact__item">
+                            <img src="images/svg/icon-map.svg" alt="">
+                            <div>
+                                <div class="nav-contact__text">Москва
+                                    <br>
+                                </div>
+                                <div class="nav-contact__text-min">Ленина 5</div>
+                            </div>
+                        </li>
+                        <li class="nav-contact__item">
+                            <img src="images/svg/icon-tel.svg" alt="">
+                            <div>
+                                <div class="nav-contact__text">Телефон</div><a class="nav-contact__text-min" href="tel:+79008888888">+7(900)888-88-88</a>
+                            </div>
+                        </li>
+                        <li class="nav-contact__item">
+                            <img src="images/svg/icon-clock.svg" alt="">
+                            <div>
+                                <div class="nav-contact__text">Режим работы</div>
+                                <div class="nav-contact__text-min">с 9:00 до 21:00</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-navigation">
+                    <div class="mobile-wrapp">
+                        <div class="logo">
+                            <a class="logo__brand" href="#">
+                                <img src="images/svg/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div id="contain">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                    <ul id="nav">
+                        <li class="mobile-nav__item"> <a class="mobile-nav__link" href="index.html">Главная </a>
+                        </li>
+                        <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#stepWork">Услуги</a>
+                        </li>
+                        <li class="mobile-nav__item"> <a class="mobile-nav__link" href="professionals.html">Специалисты</a>
+                        </li>
+                        <li class="mobile-nav__item" id="mobile-nav__item"> <a class="mobile-nav__link" href="#stock">Цены</a>
+                            <img src="images/svg/price-arrow.svg" alt="">
+                        </li>
+                        <div class="priceMobile" id="priceMobile">
+                            <div class="nav__link-submenu"> <a class="nav__link" href="#">Лабораторные исследования</a>
+                            </div>
+                            <div class="nav__link-submenu"><a class="nav__link" href="price.html">Стоимость лечения </a>
+                            </div>
+                        </div>
+                        <li class="mobile-nav__item"> <a class="mobile-nav__link" href="#stock">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-contact nav-contact-mobile">
+                        <li class="nav-contact__item">
+                            <img src="images/svg/icon-map.svg" alt="">
+                            <div>
+                                <div class="nav-contact__text">Москва
+                                    <br>
+                                </div>
+                                <div class="nav-contact__text-min">Ленина 5</div>
+                            </div>
+                        </li>
+                        <li class="nav-contact__item">
+                            <img src="images/svg/icon-tel.svg" alt="">
+                            <div>
+                                <div class="nav-contact__text">Телефон</div><a class="nav-contact__text-min" href="tel:+79008888888">+7(900)888-88-88</a>
+                            </div>
+                        </li>
+                        <li class="nav-contact__item">
+                            <img src="images/svg/icon-clock.svg" alt="">
+                            <div>
+                                <div class="nav-contact__text">Режим работы</div>
+                                <div class="nav-contact__text-min">с 9:00 до 21:00</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="nav-page-header"> <a href="index.html">Главная  /</a><a href="#"> Цены  /</a><a href="laboratory-price.html"> Лабораторные исследования</a>
+        </div>
+        <div class="pricePage">
+            <h1 class="col-left__title"><span>Лабораторные</span> исследования</h1>
+        </div>
+        <div class="pricePage__title titlelaboratory">
+            <div class="titlelaboratory__item titlelaboratory__item-style">Наименование услуг</div>
+            <div class="titlelaboratory__item">Единица</div>
+            <div class="titlelaboratory__item">Цена, руб.</div>
+        </div>
+        <div class="pricePage__list" id="laboratory-price">
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">АЛЛЕРГОЛОГИЯ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Непищевая</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Аллергопанель к 20 непищевым аллергенам для кошек (Ig Е)</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">5000 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Аллергопанель к 20 непищевым аллергенам для собак (Ig Е)</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">1000 Р</div>
+                </div>
+                <div class="pricePage__titleCollapse">Пищевая</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Аллергопанель к 4 принесенным кормам</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">2200 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Аллергопанель к 4 принесенным кормам</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">3200 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Аллергопанель на 8 кормов/монопродуктов из списка (кошка)</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">1600 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Аллергопанель на 8 кормов/монопродуктов из списка (собака)</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">1600 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Аллергопанель на монопродукты к 46 пищевым аллергенам</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">6200 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Дополнительно принесенный корм</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">800 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Дополнительный корм из списка (собака)</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">400 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Дополнительный корм из списка (кошка)</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">400 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Монопродукт из списка</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">400 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Монопродукт из списка</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">400 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Монопродукты 150</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">12000 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">БИОХИМИЯ ВЫПОТЫ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">5000 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">БИОХИМИЯ КРОВИ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">5000 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ВИТАМИНЫ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">5000 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ГЕМАТОЛОГИЯ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">5000 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ГЕНЕТИКА КОШЕК</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">5000 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ГЕНЕТИКА СОБАК</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">5000 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ГЕНЕТИЧЕСКИЕ КОМПЛЕКСЫ СОБАК</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">5000 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ГИСТОЛОГИЯ И ЦИТОЛОГИЯ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">1 исследование</div>
+                    <div class="collapsePrice__price">5000 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ГОРМОНЫ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Гормоны (профили)</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Гормональный профиль</div>
+                    <div class="pricePage__col-testTable">4 исследования</div>
+                    <div class="collapsePrice__price">2900 Р</div>
+                </div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Гормональный профиль собака</div>
+                    <div class="pricePage__col-testTable">5 исследований</div>
+                    <div class="collapsePrice__price">3500 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ИНФЕКЦИИ И ИНВАЗИИ (ИФА)</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">4 исследования</div>
+                    <div class="collapsePrice__price">2900 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ИНФЕКЦИИ И ИНВАЗИИ (ПЦР)</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">4 исследования</div>
+                    <div class="collapsePrice__price">2900 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ИНФЕКЦИИ И ИНВАЗИИ (ЭКСПРЕСС)</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">4 исследования</div>
+                    <div class="collapsePrice__price">2900 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ИССЛЕДОВАНИЕ КАЛА</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">4 исследования</div>
+                    <div class="collapsePrice__price">2900 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">КОАГУЛЯЦИОННЫЙ ГЕМОСТАЗ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">4 исследования</div>
+                    <div class="collapsePrice__price">2900 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">МИКРОБИОЛОГИЯ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">4 исследования</div>
+                    <div class="collapsePrice__price">2900 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">МОЧЕПОЛОВАЯ СИСТЕМА</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">4 исследования</div>
+                    <div class="collapsePrice__price">2900 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ПАРАЗИТОЛОГИЯ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">4 исследования</div>
+                    <div class="collapsePrice__price">2900 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ПРОФИЛИ КОШКИ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">4 исследования</div>
+                    <div class="collapsePrice__price">2900 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ПРОФИЛИ СОБАК</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">4 исследования</div>
+                    <div class="collapsePrice__price">2900 Р</div>
+                </div>
+            </div>
+            <div class="pricePage__item">
+                <div>
+                    <div class="pricePage__text">ТОКСИКОЛОГИЯ</div>
+                    <div class="pricePage__arrow">
+                        <img src="images/svg/arrow-down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pricePage__collapse collapsePrice">
+                <div class="pricePage__titleCollapse">Тест</div>
+                <div class="collapsePrice__item">
+                    <div class="collapsePrice__text">Тест</div>
+                    <div class="pricePage__col-testTable">4 исследования</div>
+                    <div class="collapsePrice__price">2900 Р</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__row">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <img src="images/svg/logo-footer.svg" alt="">
+                </div>
+                <div class="footer__text">Множество людей доверяют нам заботу о своих подопечных, потому, что мы - профессионалы своего дела и ответственно относимся к жизни Ваших любимцев.</div>
+            </div>
+            <div class="footer__wrapp">
+                <div class="footer__col">
+                    <ul class="footer__nav-name">Услуги
+                        <li class="footer__nav-item"> <a href="#">Терапия</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Вызов доктора</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Стационар</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Дерматология</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Диагностика</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__nav-name">Компания
+                        <li class="footer__nav-item"> <a href="#">Специалисты</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Отзывы</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Акции</a>
+                        </li>
+                        <li class="footer__nav-item"> <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__contacts contactsBlock">Контакты</div>
+                    <div class="contactsBlock__cont">Наш адрес</div>
+                    <div class="contactsBlock__cont-text">г. Казань, просп. Победы, 39</div>
+                    <div class="contactsBlock__cont">Наша почта</div>
+                    <div class="contactsBlock__cont-text">info-test@gmail.com</div>
+                    <div class="contactsBlock__social socialIcon">
+                        <div class="socialIcon__icon">
+                            <a href="#">
+                                <img src="images/svg/icon-inst.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="socialIcon__icon">
+                            <a href="#">
+                                <img src="images/svg/icon_whatsapp.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="socialIcon__icon">
+                            <a href="#">
+                                <img src="images/svg/icon-vk.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.collapse.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

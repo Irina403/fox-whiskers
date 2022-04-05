@@ -79,3 +79,15 @@ $( "#mobile-nav__item" ).click(function(e) {
     }
    
   });
+
+  new jQueryCollapse($("#laboratory-price"), {
+    open: function() {
+      this.slideDown(500);
+      // $('.pricePage__arrow').html('<img src="images/svg/arrow-up.svg", alt="";/>');
+    },
+    close: function() {
+      this.slideUp(500);
+      // $('.pricePage__arrow').html('<img src="images/svg/arrow-down.svg", alt="";/>');
+    }
+   
+  });
