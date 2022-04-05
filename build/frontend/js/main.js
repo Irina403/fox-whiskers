@@ -1,13 +1,13 @@
-// let x = document.getElementById("contain");
+let x = document.getElementById("contain");
 
-// x.addEventListener("click", myFunction);
+x.addEventListener("click", myFunction);
 
-// function myFunction() {
-//   let element = document.getElementById("nav");
-//   element.classList.toggle("open");
+function myFunction() {
+  let element = document.getElementById("nav");
+  element.classList.toggle("open");
 
-//   x.classList.toggle("change");
-// };
+  x.classList.toggle("change");
+};
 
 
 $( "#nav-price" ).hover(function(e) {
@@ -68,26 +68,39 @@ $( "#mobile-nav__item" ).click(function(e) {
     });
   });
 
-  new jQueryCollapse($("#custom-show-hide-example"), {
-    open: function() {
-      this.slideDown(500);
-      // $('.pricePage__arrow').html('<img src="images/svg/arrow-up.svg", alt="";/>');
-    },
-    close: function() {
-      this.slideUp(500);
-      // $('.pricePage__arrow').html('<img src="images/svg/arrow-down.svg", alt="";/>');
-    }
-   
-  });
 
-  new jQueryCollapse($("#laboratory-price"), {
-    open: function() {
-      this.slideDown(500);
-      // $('.pricePage__arrow').html('<img src="images/svg/arrow-up.svg", alt="";/>');
-    },
-    close: function() {
-      this.slideUp(500);
-      // $('.pricePage__arrow').html('<img src="images/svg/arrow-down.svg", alt="";/>');
-    }
+
+  // new jQueryCollapse($("#custom-show-hide-example"), {
+  //   open: function() {
+  //     this.slideDown(500);
+  //     // $('.pricePage__arrow').html('<img src="images/svg/arrow-up.svg", alt="";/>');
+  //   },
+  //   close: function() {
+  //     this.slideUp(500);
+  //     // $('.pricePage__arrow').html('<img src="images/svg/arrow-down.svg", alt="";/>');
+  //   }
    
-  });
+  // });
+
+  // new jQueryCollapse($("#laboratory-price"), {
+  //   open: function() {
+  //     this.slideDown(500);
+  //     // $('.pricePage__arrow').html('<img src="images/svg/arrow-up.svg", alt="";/>');
+  //   },
+  //   close: function() {
+  //     this.slideUp(500);
+  //     // $('.pricePage__arrow').html('<img src="images/svg/arrow-down.svg", alt="";/>');
+  //   }
+   
+  // });
+
+	$(document).ready(function(){
+		// set up hover panels
+		// although this can be done without JavaScript, we've attached these events
+		// because it causes the hover to be triggered when the element is tapped on a touch device
+		$('.hover').hover(function(){
+			$(this).addClass('flip');
+		},function(){
+			$(this).removeClass('flip');
+		});
+	});
