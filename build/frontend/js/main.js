@@ -20,15 +20,16 @@ $( "#mobile-nav__item" ).click(function(e) {
   $( "#priceMobile" ).slideToggle();
 });
 
+
   $(document).ready(function($) {
-    $('.slider__content').slick({
+    $('.sliderSlick').slick({
       arrows: true,
-      prevArrow: '.arrowButton__arrow--prev',
-      nextArrow: '.arrowButton__arrow--next',
+      prevArrow: '.arrowSlder__wrapp-prev',
+      nextArrow: '.arrowSlder__wrapp-next',
       dots: false,
       infinite: true,
       speed: 800,
-      slidesToShow: 2,
+      slidesToShow: 1,
       slidesToScroll: 1,
       responsive: [
         {
@@ -94,13 +95,3 @@ $( "#mobile-nav__item" ).click(function(e) {
    
   });
 
-	// $(document).ready(function(){
-	// 	// set up hover panels
-	// 	// although this can be done without JavaScript, we've attached these events
-	// 	// because it causes the hover to be triggered when the element is tapped on a touch device
-	// 	$('.hover').hover(function(){
-	// 		$(this).addClass('flip');
-	// 	},function(){
-	// 		$(this).removeClass('flip');
-	// 	});
-	// });
