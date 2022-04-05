@@ -435,22 +435,128 @@ html *
 
 
 .card_doctor
+    margin-top 5%
+    margin-bottom 20%
     &__row
         display flex
+    &__col
+        margin-right 40px
     &__specialty
+        margin-top 10px
         font-size 18px
         font-family fontSecond-r
     &__fio 
         font-size fontTitleBlock
-        font-family fontSecond-sb
+        font-family fontSecond-b
+        letter-spacing: 0.035em;
     &__fio span
         color colorElem
     &__title
+        margin-top 10px
         font-size 24px
         font-family fontSecond-b
     &__desck
+        margin-top 20px
         font-size 18px
         font-family fontSecond-r
 
+.services 
+    margin-top 5%
+    &__list 
+        display flex
+        justify-content: space-between
+    &__item
+        height 430px
+        display flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        padding-left 10px
+        padding-right 10px
+        padding-top 10px
+        width 276px
+        border-radius: 40px
+        border 1px solid #F2F2F2
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+    &__title
+        font-size 24px
+        font-family fontSecond-sb
+    &__price
+        font-size 16px
+        font-family fontSecond-b
+        color colorElem
+    &__text
+        text-align center
+        font-size 14px
+        font-family fontSecond-r
+        color fontColor
+        line-height: 140%;
+.servicesStyle
+    &__subtitle
+        margin-top 10%
+        color colorElem 
+        font-size 28px
+        font-family fontSecond-b
+    &__box
+        width 65%
+    &__text
+        margin-top 20px
+        font-size 18px
+        color fontColor
+        font-family fontSecond-r
 
+.pagination
+    margin-top 10%
+    display flex
+    justify-content: center
+    align-items: center
+    &__num
+        font-size 18px
+        font-family fontSecond-sb
+        margin-right 35px
+        margin-left 35px
+        padding 6px 12px
+        color #000
 
+.pagination__num.active
+    border: 1px solid colorElem
+    border-radius: 9px
+    
+
+.contacts
+    &__wrapp
+        display flex
+        justify-content: space-between
+    &__col
+        width 50%
+    &__text 
+        font-size 20px
+        font-family fontSecond-sb
+    
+    &__textName
+        font-size 16px
+        font-family fontSecond-sb
+
+    &__link
+        font-size 16px
+        font-family fontSecond-r
+
+.form 
+    display flex
+    flex-direction: column
+    &__input
+        padding-left 20px
+        margin-bottom 20px
+        max-width: 316px
+        width 100%
+        border-radius: 10px
+        border: 1px solid #828282
+        height 50px
+        &-message
+            max-width: 440px
+            width 100%
+            padding-bottom 150px
+            
+::-webkit-input-placeholder
+    font-size 16px
+    font-family fontSecond-r
