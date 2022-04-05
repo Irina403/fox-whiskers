@@ -1,13 +1,13 @@
-// let x = document.getElementById("contain");
+let x = document.getElementById("contain");
 
-// x.addEventListener("click", myFunction);
+x.addEventListener("click", myFunction);
 
-// function myFunction() {
-//   let element = document.getElementById("nav");
-//   element.classList.toggle("open");
+function myFunction() {
+  let element = document.getElementById("nav");
+  element.classList.toggle("open");
 
-//   x.classList.toggle("change");
-// };
+  x.classList.toggle("change");
+};
 
 
 $( "#nav-price" ).hover(function(e) {
