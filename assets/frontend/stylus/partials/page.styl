@@ -87,8 +87,12 @@ html *
     background-color colorElem
     color #fff
     border-radius: 60px
+    cursor: pointer
     sm(margin, auto)
-
+    transition-property: all;
+    transition-duration: .8s;
+.btnMain:hover
+   background-color: #FA5A00
 .btnMain a
     font-family fontSecond-b
     font-size 18px
@@ -125,6 +129,8 @@ html *
         margin-top 40px
         color fontColor
         margin-bottom 60px
+    &__btn
+        margin-bottom 15px
 .col-left 
     width 30%
     sm(width, 100%)
@@ -182,6 +188,7 @@ html *
         border-radius: 15px
         margin-right 20px
         cursor pointer
+        transition-duration: .8s;
 .arrowSlder__wrapp-prev:after
     display flex
     align-items: center
@@ -194,6 +201,8 @@ html *
     justify-content: center
     height 100%
     content: url(../images/svg/arrow-next.svg)
+.arrowSlder__wrapp-next:hover
+    border: 1px solid colorElem
 
 
 .descriptionBlock
@@ -315,6 +324,9 @@ html *
         align-items: center
      &__button img
         margin-left 10px
+        cursor pointer
+    &__button img:hover
+        animation: movie 2s 
     &__btn
        margin-top 7%
        sm(margin-top, 10%)
@@ -366,11 +378,13 @@ html *
 
 .collapsePrice
     margin-top 50px
+    padding-top 0
     sm(margin-top, 0px)
     &__item 
         justify-content: space-between
         width 100%
         min-height 86px
+        margin-bottom 10px
         // padding-bottom 27px
         // margin-top 55px
         padding-left 40px
@@ -602,7 +616,7 @@ html *
 .flip-container-front:after
     content url(../images/svg/flip-btn.svg)
     position: absolute
-    bottom 10px
+    top 230px
     right 10px
     cursor: pointer
 .flip-container-back
@@ -663,4 +677,10 @@ html *
         font-size 16px
         font-family fontSecond-sb
 
+@keyframes movie 
+    0% 
+       transform: translate(0, 0);
+    
+    100% 
+       transform: translate(5px, 0px);
 
