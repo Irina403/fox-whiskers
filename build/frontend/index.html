@@ -35,7 +35,7 @@
             <div class="navContainer">
                 <div class="navWrapper">
                     <div class="logo logo-desck">
-                        <a class="logo__brand" href="#">
+                        <a class="logo__brand" href="index.html">
                             <img src="images/svg/logo.svg" alt="">
                         </a>
                     </div>
@@ -147,7 +147,7 @@
             <div class="mainScreen__col col-left">
                 <h1 class="col-left__title">Ветеринарная <br> клиника</h1>
                 <div class="col-left__text">Круглосуточная помощь вашим любимцам в клиниках с соверменным оборудованием и</div>
-                <div class="col-left__btn btnMain"> <a href="#">Записаться на прием</a>
+                <div class="col-left__btn btnMain btnMainScreen"> <a class="popup-open" href="#">Записаться на прием</a>
                 </div>
             </div>
             <div class="mainScreen__col col-right">
@@ -490,6 +490,20 @@
             </div>
         </div>
     </footer>
+    <div class="popup-fade">
+        <div class="popup">
+            <div class="popup__container">
+                <img class="popup-close" src="images/svg/icon-close.svg" alt="">
+                <div class="popup__title">Заполните ваши данные</div>
+                <form class="footer__contactForm popupForm" action="#">
+                    <input class="popupForm__inputStyle" type="text" placeholder="Ваше имя">
+                    <input class="popupForm__inputStyle" type="text" placeholder="Ваш телефон">
+                    <div class="popupForm__btn btnMain"> <a href="#">Отправить</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/swiper.min.js"></script>
