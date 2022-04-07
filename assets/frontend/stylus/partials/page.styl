@@ -289,7 +289,7 @@ html *
 
 
 .reviews
-    margin-top 5em
+    margin-top 10em
     sm(margin-top,5em)
     &__title
         display flex
@@ -467,6 +467,7 @@ html *
     margin-top 95px
 .professionals
     margin-top 43px
+    display none
     &__tab
         display flex
     &__btn
@@ -616,22 +617,29 @@ html *
     font-size 16px
     font-family fontSecond-r
 
-//ФЛЕКСБОКС
+//ФЛИПБОКС
 .cont
-    display: flex;
-    flex-wrap: wrap
-    position: relative;
+    margin-top -12%
+    display grid
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+    grid-gap 31px 23px
+
+
+    // display: flex;
+    // flex-wrap: wrap
+    // position: relative;
     width:100%;
-    align-content:center;
-    padding:30px;
-    sm(display, none)
+    // align-content:center;
+    // padding:30px;
+    // sm(display, none)
     
 .flip-container
     position relative
-    width:50%
-    height: 100%;
-    margin:auto;
-		
+//     width:50%
+//     height: 100%;
+//     margin:auto;
+.flip-containerStyle2
+    margin-top 30%		
 .flip-container-front div
     width: 250px;
 .flip-container-front
@@ -783,6 +791,14 @@ input::-webkit-input-placeholder
        transform: translate(5px, 0px);
 
 
+.containerFlip
+  max-width: 60%;
+  float: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+
 @media(max-width:1400px)
     .listAdvantage__item:nth-child(2)
         margin-right 0
@@ -796,8 +812,8 @@ input::-webkit-input-placeholder
     //     margin-top 20px
     .descriptionBlock__item
         width 240px
-    .cont
-        width 115%
+    // .cont
+    //     width 115%
     .footer__col 
         width 40%
     .footer__row 
@@ -810,15 +826,13 @@ input::-webkit-input-placeholder
         justify-content: center
         padding-bottom 30px
 
-@media(max-width:1042px)
-    .cont
-        width 155%
+
 
 @media(max-width:990px)       
     .flip-container
         width 40%    
-    .cont
-        display none
+    // .cont
+    //     display none
     .doctorsBlock__btn
         margin-top 5%
     .services__list
