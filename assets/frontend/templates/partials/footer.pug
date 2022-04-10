@@ -47,3 +47,13 @@ footer.footer
                         a(href="#")
                             img(src="images/svg/icon-vk.svg", alt="")
 
+.popup-fade 
+    .popup
+        .popup__container 
+            img(src="images/svg/icon-close.svg", alt="").popup-close 
+            .popup__title  Заполните ваши данные
+            form.footer__contactForm.popupForm(action="#") 
+                input.popupForm__inputStyle(type="text" placeholder="Ваше имя")
+                input.popupForm__inputStyle(type="text" placeholder="Ваш телефон")
+                .popupForm__btn.btnMain 
+                    a(href="#") Отправить
