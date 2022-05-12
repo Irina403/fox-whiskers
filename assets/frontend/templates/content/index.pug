@@ -115,74 +115,22 @@
                     .doctorsBlock__btn.btnMain 
                         a(href="professionals.html") Все врачи
 
-                .cont
-                    .flip-container
-                        .flip-container-front
-                            div 
-                                img(src="images/images/doctor1.png", alt="")
-                        .flip-container-back 
-                            .doctorInfo 
-                                .doctorInfo__name Имя Фамилия Отчество
-                                .doctorInfo__list
-                                    .doctorInfo__item 
-                                        img(src="images/svg/check.svg", alt="")
-                                        div Ветеринарный фельдшер
-                                    .doctorInfo__item 
-                                        img(src="images/svg/check.svg", alt="")
-                                        div 9 лет опыта работы
-                                .doctorInfo__button 
-                                    a(href="card_doctor.html") Подробнее
-
-                    .flip-container
-                        .flip-container-front
-                            div 
-                                img(src="images/images/doctor2.png", alt="")
-                        .flip-container-back 
-                            .doctorInfo 
-                                .doctorInfo__name Имя Фамилия Отчество
-                                .doctorInfo__list
-                                    .doctorInfo__item 
-                                        img(src="images/svg/check.svg", alt="")
-                                        div Ветеринарный фельдшер
-                                    .doctorInfo__item 
-                                        img(src="images/svg/check.svg", alt="")
-                                        div 9 лет опыта работы
-                                .doctorInfo__button 
-                                    a(href="card_doctor.html") Подробнее
-
-                    .flip-container.flip-containerStyle2
-                        .flip-container-front
-                            div 
-                                img(src="images/images/doctor3.png", alt="")
-                        .flip-container-back 
-                            .doctorInfo 
-                                .doctorInfo__name Имя Фамилия Отчество
-                                .doctorInfo__list
-                                    .doctorInfo__item 
-                                        img(src="images/svg/check.svg", alt="")
-                                        div Ветеринарный фельдшер
-                                    .doctorInfo__item 
-                                        img(src="images/svg/check.svg", alt="")
-                                        div 9 лет опыта работы
-                                .doctorInfo__button 
-                                    a(href="#") Подробнее
-
-                    .flip-container.flip-containerStyle2
-                        .flip-container-front
-                            div 
-                                img(src="images/images/doctor4.png", alt="")
-                        .flip-container-back 
-                            .doctorInfo 
-                                .doctorInfo__name Имя Фамилия Отчество
-                                .doctorInfo__list
-                                    .doctorInfo__item 
-                                        img(src="images/svg/check.svg", alt="")
-                                        div Ветеринарный фельдшер
-                                    .doctorInfo__item 
-                                        img(src="images/svg/check.svg", alt="")
-                                        div 9 лет опыта работы
-                                .doctorInfo__button 
-                                    a(href="#") Подробнее
+                ul.doc_list--w
+                    -for(i = 0; i < 4; i++)
+                        li.doc_item--w
+                            .doc_item--iner
+                                .doc_item--front 
+                                    .doc_front--img 
+                                        img(src="images/images/doctor1.png", alt="")
+                                    .doc_item--dog 
+                                        img(src="images/svg/flip-btn.svg", alt="") 
+                                .doc_item--content 
+                                    h5 Имя Фамилия Отчество
+                                    ul 
+                                        li Ветеринарный фельдшер
+                                        li 9 лет опыта работы
+                                    .doctorInfo__button  
+                                        a(href="#") Подробнее
     .reviews 
         .reviews__row 
             .reviews__col 

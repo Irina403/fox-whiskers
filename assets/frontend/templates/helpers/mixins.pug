@@ -7,3 +7,20 @@ mixin style(styles)
     each href in styles
         - href = ((/^(https?:)?\/\//.test(href) || /bower_components/.test(href)) ? href : 'css/' + href);
         link(href=href rel='stylesheet')
+
+
+mixin cardDoctors(item)
+    li.doc_item--w.doc_itemProff(data-tab=item.data)
+        .doc_item--iner
+            .doc_item--front 
+                .doc_front--img 
+                    img(src=item.img, alt="")
+                .doc_item--dog 
+                    img(src="images/svg/flip-btn.svg", alt="") 
+            .doc_item--content 
+                h5=item.name
+                ul 
+                    li Ветеринарный фельдшер
+                    li 9 лет опыта работы
+                .doctorInfo__button  
+                    a(href="card_doctor.html") Подробнее

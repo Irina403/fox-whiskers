@@ -263,10 +263,11 @@ html *
     display flex
     justify-content: space-between
 .doctorsBlock
-    margin-top 8em
+    // margin-top 8em
     &__row 
         display flex
-        sm(display, block)
+        align-items: baseline
+        md(display, block)
     &__title
         display flex
         align-items: center
@@ -290,7 +291,8 @@ html *
 
 .reviews
     margin-top 10em
-    sm(margin-top,5em)
+    // sm(margin-top,5em)
+    // xs(margin-top, 270%)
     &__title
         display flex
         align-items: center
@@ -467,7 +469,7 @@ html *
     margin-top 95px
 .professionals
     margin-top 43px
-    display none
+    // display none
     &__tab
         display flex
     &__btn
@@ -618,66 +620,146 @@ html *
     font-family fontSecond-r
 
 //ФЛИПБОКС
-.cont
-    margin-top -12%
-    display grid
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
-    grid-gap 31px 23px
+// .cont
+//     margin-top -12%
+//     display grid
+//     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+//     grid-gap 20% 10%
+//     xxl(grid-template-columns, 200px 200px)
+//     xxl(grid-gap, 20% 20%)
+//     xl(grid-gap, 35% 15%)
+//     md(grid-template-columns, 1fr 1fr)
+//     md(grid-gap, 50% 15%)
+//     md(margin-top,5%)
+//     md(margin-bottom, 72%)
+//     xs(grid-template-columns, 200px)
+//     xs(grid-template-columns, 1fr)
+//     width:100%;
 
+// .flip-container
+//     position relative
+//     margin-bottom 32%
+// .flip-containerStyle2
+//     md(margin-top, 80%)	
+//     xs(margin-top, 0%)	
+// .flip-container-front div
+//     width: 250px;
+// .flip-container-front
+//     text-align:center;
+//     position: absolute;
+//     backface-visibility: hidden;
+//     transition:  linear 0.7s;
+//     transform: rotateY(0deg);
+//     cursor: pointer
+// .flip-container-front:after
+//     content url(../images/svg/flip-btn.svg)
+//     position: absolute
+//     top 230px
+//     right 10px
+//     cursor: pointer
+// .flip-container-back
+//     position: absolute;
+//     backface-visibility: hidden;
+//     transition:  linear 0.7s;
+//     transform: rotateY(180deg);
+//     background-color: colorElem 
+//     height:300px;
+//     width: 250px;
+//     text-align: center;
+//     border-radius: 40px
 
-    // display: flex;
-    // flex-wrap: wrap
-    // position: relative;
-    width:100%;
-    // align-content:center;
-    // padding:30px;
-    // sm(display, none)
-    
-.flip-container
-    position relative
-//     width:50%
-//     height: 100%;
-//     margin:auto;
-.flip-containerStyle2
-    margin-top 30%		
-.flip-container-front div
-    width: 250px;
-.flip-container-front
-    text-align:center;
-    position: absolute;
+// .flip-container:hover > .flip-container-front
+//     transform: rotateY(-180deg);
+//     height: 300px;
+//     width: 250px;
+
+// .flip-container:hover > .flip-container-back
+//     transform: rotateY(0deg);
+// // .flip-iconPow 
+// //     // position: absolute
+// //     // bottom: 40px
+// //     // right 80px
+// //     // right -20px
+.doc_item
+    &--iner
+        // height: 100%;
+        position: relative;
+        text-align: left;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        width: 100%;
+        cursor pointer
+        height: 378px;
+        &:hover
+            transform: rotateY(180deg);
+
+.doc_item--content,
+.doc_item--front 
     backface-visibility: hidden;
-    transition:  linear 0.7s;
-    transform: rotateY(0deg);
-    cursor: pointer
-.flip-container-front:after
-    content url(../images/svg/flip-btn.svg)
-    position: absolute
-    top 230px
-    right 10px
-    cursor: pointer
-.flip-container-back
+    -webkit-backface-visibility: hidden;
+    border-radius: 40px;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
     position: absolute;
-    backface-visibility: hidden;
-    transition:  linear 0.7s;
+    width: 100%;
+
+.doc_item--content  
+    padding-top 33px
+    background-color: colorElem
+    color: white;
+    padding: 20px;
     transform: rotateY(180deg);
-    background-color: colorElem 
-    height:300px;
-    width: 250px;
-    text-align: center;
-    border-radius: 40px
 
-.flip-container:hover > .flip-container-front
-    transform: rotateY(-180deg);
-    height: 300px;
-    width: 250px;
+.doc_item--content h5
+    color #fff
+    font-size 24px
+    font-family fontSecond-sb
 
-.flip-container:hover > .flip-container-back
-    transform: rotateY(0deg);
-// .flip-iconPow 
-//     // position: absolute
-//     // bottom: 40px
-//     // right 80px
-//     // right -20px
+.doc_item--content li
+    font-size 16
+    font-family fontSecond-r
+    margin-top: 26px
+.doc_item--content li:before
+    content url(../images/svg/check.svg)
+    margin-right 10px
+.doc_item--w 
+    margin 0 auto
+    margin-bottom 30px
+.doc_list--w 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
+    grid-gap: 31px 23px;
+    width: 100%;
+    // height: 378px
+
+    margin-top 5%
+    sm(margin-bottom, 80%)
+    xl(grid-template-columns, 50% 50%)
+    sm(grid-template-columns, 50% 50%)
+    xs(display, block)
+    xs(margin-bottom, 82em)
+    
+    li 
+        position relative;
+        width: 311px;
+        perspective: 1000px;
+
+.doc_item--content ul
+    margin-top: 26px
+.doc_item--dog {
+    position: absolute;
+    bottom: 13px;
+    right: 15px;
+    width: 59px;
+    height: 59px;
+    border-radius 20px;
+    background-color #fff;
+    }
+.doc_front--img  {
+    width: 100%;
+    height: 372px;
+    }
 .doctorInfo
     position relative
     padding 30px 20px
@@ -709,9 +791,18 @@ html *
         width 190px
         height: 50px
         border-radius: 60px
+        left: 50%
+        transform: translate(-50%,0%)
      &__button a
         font-size 16px
         font-family fontSecond-sb
+        color #000
+.doc_item--wProffesionals
+    display: grid;
+    grid-gap 31px 50px
+    xs(margin-bottom, 0em)
+.containerflip 
+    position relative
 //МОДАЛКА
 .popup-fade
     display none
@@ -783,6 +874,12 @@ input::-webkit-input-placeholder
 // .btnMainScreen 
 //     sm(margin, 0 auto)
 //     sm(margin-left, 0)
+// .doc_itemProff
+//     display none
+//     &.active_tab
+//         display block
+
+
 @keyframes movie 
     0% 
        transform: translate(0, 0);
@@ -791,12 +888,12 @@ input::-webkit-input-placeholder
        transform: translate(5px, 0px);
 
 
-.containerFlip
-  max-width: 60%;
-  float: none;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+// .containerFlip
+//   max-width: 60%;
+//   float: none;
+//   margin: 0 auto;
+//   display: flex;
+//   justify-content: center;
 
 
 @media(max-width:1400px)
@@ -844,18 +941,6 @@ input::-webkit-input-placeholder
         flex-wrap: wrap
     .contacts__col 
         width 50%
-
-//     .doctorsBlock__row
-//       display block
-//     .cont
-//         width 60%
-//     .flip-container
-//         margin-right 35%        
-        
-    // .flip-container-front
-    //     margin-left -20px
-    // .flip-container-back
-    //     margin-left -20px
 
 
     

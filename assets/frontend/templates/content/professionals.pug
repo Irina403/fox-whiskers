@@ -8,32 +8,27 @@
         h1.col-left__title Специалисты
     
     .professionals
-        .professionals__tab 
-            .professionals__btn Все
-            .professionals__btn Терапевт
-            .professionals__btn Ортопед
-            .professionals__btn Хирург
-            .professionals__btn Дерматолог
-            .professionals__btn Невролог
-            .professionals__btn Кардилог
-            .professionals__btn Узи специалист
-            .professionals__btn Кардилог
-            
-    .containerFlip
-        .containerFlip__row  
-            ul
-                li.col-flip
-                    .front
-                        img(src="images/images/doctor1.png", alt="")
-                        .back
-                            .doctorInfo 
-                                .doctorInfo__name Имя Фамилия Отчество
-                li.col-flex
-                    .front
-                        img(src="images/images/doctor3.png", alt="")
-                        .back
-                            .doctorInfo 
-                                .doctorInfo__name Имя Фамилия Отчество
+        .professionals__tab
+            .professionals__btn(data-tab="data_1") Все
+            .professionals__btn(data-tab="data_2") Терапевт
+            .professionals__btn(data-tab="data_3") Ортопед
+            .professionals__btn(data-tab="data_4") Хирург
+            .professionals__btn(data-tab="data_5") Дерматолог
+            .professionals__btn(data-tab="data_6") Невролог
+            .professionals__btn(data-tab="data_7") Кардилог
+            .professionals__btn(data-tab="data_8") Узи специалист
+            .professionals__btn(data-tab="data_9") Кардилог
+
+    .containerflip    
+        ul.doc_list--w.doc_item--wProffesionals
+            -for(i = 1; i < 6; i++)
+               - var dataSrc = 'data_' + i;
+                +cardDoctors({
+                    img: 'images/images/doctor1.png', 
+                    name: 'Фамилия Имя Отчество',
+                    data: `${dataSrc}`
+                })
+               
 
 
 
